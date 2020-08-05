@@ -1,7 +1,5 @@
 package com.tin.it.mqtt;
 
-import org.eclipse.paho.client.mqttv3.MqttMessage;
-import org.reactivestreams.Subscription;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.integration.mqtt.core.MqttPahoClientFactory;

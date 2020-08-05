@@ -33,11 +33,11 @@ public class Constants {
 
     public static final String TOPIC_PLATFORM_REQUEST = "chuangkou/platform/request/#";
 
-    public static final String TOPIC_PLATFORM_RESPONSE = "chuangkou/platform/response/#";
+    public static final String TOPIC_PLATFORM_RESPONSE = "chuangkou/platform/response/";
 
-    public static final String TOPIC_PLATFORM_DATA = "chuangkou/platform/data/#";
+    public static final String TOPIC_PLATFORM_DATA = "chuangkou/platform/data/";
 
-    public static final String TOPIC_GATEWAY_REQUEST = "chuangkou/gateway/request/#";
+    public static final String TOPIC_GATEWAY_REQUEST = "chuangkou/gateway/request/";
 
     public static final String TOPIC_GATEWAY_RESPONSE = "chuangkou/gateway/response/#";
 

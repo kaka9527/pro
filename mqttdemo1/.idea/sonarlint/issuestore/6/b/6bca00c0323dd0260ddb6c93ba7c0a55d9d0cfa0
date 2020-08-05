@@ -1,0 +1,16 @@
+
+?squid:S1148G"#Use a logger to log this exception.(¥…ãııÿÿÿÿ
+T
+squid:S106P"9Replace this use of System.out or System.err by a logger.(ÃÆ¢ÿÿÿÿÿ
+[
+squid:S106_"9Replace this use of System.out or System.err by a logger.(ŸöÄçÿÿÿÿÿ8¼ˆ‰¿º.
+˜squid:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹ä¸¤
+8squid:S2189q""Add an end condition to this loop.(¤èÄ7
+?squid:S11487"#Use a logger to log this exception.(¥…ãııÿÿÿÿ
+˜squid:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ç´ß¼
+O
+squid:S106?"9Replace this use of System.out or System.err by a logger.(ö°€à
+?squid:S1148c"#Use a logger to log this exception.(¥…ãııÿÿÿÿ
+V
+squid:S106Q"9Replace this use of System.out or System.err by a logger.(‡ôß‘8Å†¿º.
+?squid:S1148j"#Use a logger to log this exception.(¥…ãııÿÿÿÿ

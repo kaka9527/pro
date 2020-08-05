@@ -1,0 +1,54 @@
+
+Esquid:S1481e".Remove this unused "mechineID" local variable.(ùã§°
+|squid:S1149¸"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ê¶ïÄıÿÿÿÿ
+7squid:S2129ø" Remove this "String" constructor(™ÜĞZ
+Csquid:S1481f"'Remove this unused "ip" local variable.(ªïßæüÿÿÿÿ
+Zsquid:S1854“"=Remove this useless assignment to local variable "mechineID".(øÑ¼Æÿÿÿÿÿ
+gsquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(ÄÒÕüşÿÿÿÿ
+hsquid:CommentedOutCodeLineĞ"<This block of commented-out lines of code should be removed.(–§’•ûÿÿÿÿ
+3squid:S1643"Use a StringBuilder instead.(Äèäé
+Xsquid:S1854’";Remove this useless assignment to local variable "acstate".(Ë®©«ÿÿÿÿÿ
+`squid:S1858’"C"str" is an array of strings, there's no need to call "toString()".(Ë®©«ÿÿÿÿÿ
+Vsquid:S3034">Prevent "int" promotion by adding "& 0xff" to this expression.(¸Äö 
+vsquid:S2293Ø"YReplace the type specification in this constructor call with the diamond operator ("<>").(Óûùìûÿÿÿÿ
+hsquid:CommentedOutCodeLine“"<This block of commented-out lines of code should be removed.(ÔÂƒñøÿÿÿÿ
+4squid:S1643é"Use a StringBuilder instead.(ÛÖ²Ş
+hsquid:CommentedOutCodeLine—"<This block of commented-out lines of code should be removed.(ï‡šáùÿÿÿÿ
+Qsquid:S18544"5Remove this useless assignment to local variable "s".(ŠóÂØûÿÿÿÿ
+Csquid:S1481d",Remove this unused "acstate" local variable.(©ğ·Ñ
+@squid:S1148ú"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ
+hsquid:CommentedOutCodeLine¶"<This block of commented-out lines of code should be removed.(µ…¬„øÿÿÿÿ
+|squid:S1149ª"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ê¶ïÄıÿÿÿÿ
+vsquid:S2293Å"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡áÓ§øÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÜâÖ¢üÿÿÿÿ
+@squid:S1148¹"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+`squid:S1858”"C"str" is an array of strings, there's no need to call "toString()".(öŒûÿÿÿÿ
+@squid:S2140")Use "java.util.Random.nextInt()" instead.(î”†ö
+9squid:S1659 "!Declare "tmp" on a separate line.(—ı¸
+qsquid:S3012È"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(±ø¡ 
+csquid:CommentedOutCodeLineü"<This block of commented-out lines of code should be removed.(Â©çŞ
+hsquid:CommentedOutCodeLineú"<This block of commented-out lines of code should be removed.(÷†šÎûÿÿÿÿ
+@squid:S1148ó"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+qsquid:S1488–"YImmediately return this expression instead of assigning it to the temporary variable "b".(¨ïœ”
+4squid:S1643Š"Use a StringBuilder instead.(åë©
+`squid:S1858“"C"str" is an array of strings, there's no need to call "toString()".(øÑ¼Æÿÿÿÿÿ
+`squid:S1858“"C"str" is an array of strings, there's no need to call "toString()".(øÑ¼Æÿÿÿÿÿ
+>squid:S1168Ü"&Return an empty array instead of null.(¥¹ï
+asquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‘Å€A
+Ssquid:S1854”"6Remove this useless assignment to local variable "ip".(öŒûÿÿÿÿ
+`squid:S1858“"C"str" is an array of strings, there's no need to call "toString()".(øÑ¼Æÿÿÿÿÿ
+hsquid:CommentedOutCodeLineÍ"<This block of commented-out lines of code should be removed.(¿‹±òıÿÿÿÿ
+~squid:S1488Ş"aImmediately return this expression instead of assigning it to the temporary variable "byteArray".(—¬Ç¤ıÿÿÿÿ
+hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(š¨ëŞÿÿÿÿÿ
+@squid:S1148œ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+>squid:S1168®"&Return an empty array instead of null.(¥¹ï
+Bsquid:S14814"&Remove this unused "s" local variable.(ŠóÂØûÿÿÿÿ
+gsquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(¿‹±òıÿÿÿÿ
+asquid:S1192t"JDefine a constant instead of duplicating this literal "machineid" 4 times.(‰ÏÁÂ
+bsquid:CommentedOutCodeLinel"<This block of commented-out lines of code should be removed.(ìó™‰
+bsquid:CommentedOutCodeLinej"<This block of commented-out lines of code should be removed.(ï€îÆ
+hsquid:CommentedOutCodeLineâ"<This block of commented-out lines of code should be removed.(Î‘ éúÿÿÿÿ
+>squid:S1168º"&Return an empty array instead of null.(¥¹ï
+hsquid:CommentedOutCodeLineš"<This block of commented-out lines of code should be removed.(–§’•ûÿÿÿÿ
+qsquid:S2293Ä"YReplace the type specification in this constructor call with the diamond operator ("<>").(…äü¹
+4squid:S1643¥"Use a StringBuilder instead.(Ö ÃÈ

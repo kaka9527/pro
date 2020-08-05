@@ -1,0 +1,9 @@
+
+Tsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ğ¥Å8¹®ıÍ·.
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ŞÃúÌúÿÿÿÿ8™—¬Ë·.
+V
+squid:S106&"9Replace this use of System.out or System.err by a logger.(¸Æ¿8¦éşÍ·.
+_squid:UselessImportCheck"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓ8Û’ûÍ·.
+isquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(û»ƒ÷8¸Ú´Î·.
+Fsquid:S1148+"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¦éşÍ·.

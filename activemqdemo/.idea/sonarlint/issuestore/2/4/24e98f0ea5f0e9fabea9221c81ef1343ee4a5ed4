@@ -1,0 +1,9 @@
+
+vsquid:S1488'"ZImmediately return this expression instead of assigning it to the temporary variable "ip".(µ¦·Áúÿÿÿÿ
+?squid:S1148"#Use a logger to log this exception.(ğø¡üÿÿÿÿ
+{squid:S1488"_Immediately return this expression instead of assigning it to the temporary variable "address".(¥Š†»şÿÿÿÿ
+xsquid:S1488/"\Immediately return this expression instead of assigning it to the temporary variable "port".(ßÄĞÖûÿÿÿÿ
+asquid:S1858'"E"split" is an array of strings, there's no need to call "toString()".(µ¦·Áúÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(‘’…«şÿÿÿÿ
+asquid:S1858/"E"split" is an array of strings, there's no need to call "toString()".(ßÄĞÖûÿÿÿÿ

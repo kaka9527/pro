@@ -1,0 +1,11 @@
+
+Bsquid:S2629"$Invoke method(s) only conditionally.(˜÷´Ù8´Þã–º.
+_squid:S3457<"AFormat specifiers should be used instead of string concatenation.(ù„Óß8þ¡º.
+gsquid:UselessImportCheck"7Remove this unused import 'com.tin.it.util.ThreadUtil'.(ôÜ±¥ûÿÿÿÿ8¡¶Õ‘».
+gsquid:UselessImportCheck"<Remove this unused import 'com.alibaba.fastjson.JSONObject'.(äýµ8¿×Êì¹.
+^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8¥š¡º.
+Rsquid:S1066""/Merge this if statement with the enclosing one.(ç¿Ùàýÿÿÿÿ8Þôç‘».
+ksquid:UselessImportCheck"@Remove this unused import 'com.tin.it.thread.SendBinDataThread'.(¡£šð8¡¶Õ‘».
+`squid:UselessImportCheck"6Remove this unused import 'com.alibaba.fastjson.JSON'.(Ö¢å$8¿×Êì¹.
+¸%squid:RedundantThrowsDeclarationCheck"{Remove the declaration of thrown exception 'org.springframework.messaging.MessagingException' which is a runtime exception.(ÉðŒ‘ýÿÿÿÿ8ÔîÆ¹.
+Usquid:S2629<"7Use the built-in formatting to construct this argument.(ù„Óß8þ¡º.

@@ -1,0 +1,6 @@
+
+O
+squid:S106K"9Replace this use of System.out or System.err by a logger.(›ÒÀİ
+usquid:S2293<"YReplace the type specification in this constructor call with the diamond operator ("<>").(”‡øéúÿÿÿÿ
+nsquid:S00117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ²ìüùÿÿÿÿ
+8squid:S16430"Use a StringBuilder instead.(ëó†°ûÿÿÿÿ

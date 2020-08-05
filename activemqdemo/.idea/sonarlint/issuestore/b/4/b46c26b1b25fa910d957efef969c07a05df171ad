@@ -1,0 +1,5 @@
+
+ƒsquid:UselessImportCheck"XRemove this unused import 'org.springframework.integration.annotation.MessagingGateway'.(Ì‚Íˆ8´ìü¸.
+„squid:UselessImportCheck"TRemove this unused import 'org.springframework.messaging.handler.annotation.Header'.(¢á»™úÿÿÿÿ8´ìü¸.
+nsquid:CommentedOutCodeLineA"<This block of commented-out lines of code should be removed.(º×ë¦şÿÿÿÿ8ªÒğü¸.
+€squid:UselessImportCheck"URemove this unused import 'org.springframework.integration.mqtt.support.MqttHeaders'.(»»‹¡8´ìü¸.

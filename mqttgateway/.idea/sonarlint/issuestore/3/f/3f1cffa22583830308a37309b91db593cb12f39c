@@ -1,0 +1,10 @@
+
+Ysquid:S2696O"6Make the enclosing method "static" or remove this set.(àñ»­ûÿÿÿÿ8¨Ž®ì¹.
+Ysquid:S2696U"6Make the enclosing method "static" or remove this set.(àñ»­ûÿÿÿÿ8ãæ§ì¹.
+Hsquid:S1068"1Remove this unused "BIN_FILE_NAME" private field.(Ü‚‚‡
+Nsquid:S2629,"7Use the built-in formatting to construct this argument.(É”íè
+Msquid:S26292"7Use the built-in formatting to construct this argument.(¹Òñ5
+bsquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(ïÓñ±
+Wsquid:S34572"AFormat specifiers should be used instead of string concatenation.(¹Òñ5
+Xsquid:S3457,"AFormat specifiers should be used instead of string concatenation.(É”íè
+nsquid:CommentedOutCodeLineb"<This block of commented-out lines of code should be removed.(¯ú¤Áúÿÿÿÿ8çáí‘».

@@ -1,0 +1,73 @@
+
+V
+squid:S106ø"9Replace this use of System.out or System.err by a logger.(­£38Úº–¹.
+`squid:S3457¥"AFormat specifiers should be used instead of string concatenation.(Ü£È°8œ¿»–¹.
+ª%squid:RedundantThrowsDeclarationCheck¸"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(èİÎÑşÿÿÿÿ8œ¿»–¹.
+ksquid:S00112ô"FDefine and throw a dedicated exception instead of using a generic one.(ÿ¡½Íÿÿÿÿÿ8Úº–¹.
+esquid:S3457Š"AFormat specifiers should be used instead of string concatenation.(Í‹™Óûÿÿÿÿ8œ¿»–¹.
+esquid:S3457š"AFormat specifiers should be used instead of string concatenation.(¹·Éçúÿÿÿÿ8œ¿»–¹.
+isquid:S2095Ú"EUse try-with-resources or close this "Session" in a "finally" clause.(åŞäúÿÿÿÿ8œ¿»–¹.
+`squid:S3457±"AFormat specifiers should be used instead of string concatenation.(‚ÌµË8œ¿»–¹.
+esquid:S3457£"AFormat specifiers should be used instead of string concatenation.(›ğüêùÿÿÿÿ8œ¿»–¹.
+asquid:S1596P">Replace "Collections.EMPTY_LIST" by "Collections.emptyList()".(÷ƒ¨öúÿÿÿÿ8Úº–¹.
+esquid:S3457´"AFormat specifiers should be used instead of string concatenation.(½Ÿšÿÿÿÿÿ8œ¿»–¹.
+`squid:S3457µ"AFormat specifiers should be used instead of string concatenation.(ì‡„§8œ¿»–¹.
+esquid:S3457‡"AFormat specifiers should be used instead of string concatenation.(Üä½øøÿÿÿÿ8œ¿»–¹.
+`squid:S3457›"AFormat specifiers should be used instead of string concatenation.(œŒ¼¶8œ¿»–¹.
+esquid:S3457²"AFormat specifiers should be used instead of string concatenation.(€šœ€úÿÿÿÿ8œ¿»–¹.
+_squid:S3457"AFormat specifiers should be used instead of string concatenation.(£‡†v8œ¿»–¹.
+`squid:S3457–"AFormat specifiers should be used instead of string concatenation.(Òº«Î8œ¿»–¹.
+ª%squid:RedundantThrowsDeclarationCheck§"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Ó‡Ğµúÿÿÿÿ8œ¿»–¹.
+`squid:S3457‹"AFormat specifiers should be used instead of string concatenation.(¸Ç8œ¿»–¹.
+`squid:S3457œ"AFormat specifiers should be used instead of string concatenation.(³ÆÙ€8œ¿»–¹.
+[squid:S2629ƒ"7Use the built-in formatting to construct this argument.(“ş•úıÿÿÿÿ8œ¿»–¹.
+`squid:S3457§"AFormat specifiers should be used instead of string concatenation.(¥‹ªÌ8œ¿»–¹.
+esquid:S3457³"AFormat specifiers should be used instead of string concatenation.(¸ÑÚ’ùÿÿÿÿ8œ¿»–¹.
+`squid:S3457·"AFormat specifiers should be used instead of string concatenation.(’ÊÁí8œ¿»–¹.
+`squid:S3457¦"AFormat specifiers should be used instead of string concatenation.(Ì„ß™8œ¿»–¹.
+isquid:S2095Î"EUse try-with-resources or close this "Session" in a "finally" clause.(åŞäúÿÿÿÿ8œ¿»–¹.
+]squid:S1155ã">Use isEmpty() to check whether the collection is empty or not.(Æµ¿Î8œ¿»–¹.
+asquid:S1596m">Replace "Collections.EMPTY_LIST" by "Collections.emptyList()".(÷ƒ¨öúÿÿÿÿ8Úº–¹.
+Vsquid:S1905ö"2Remove this unnecessary cast to "MessageConsumer".(¾¤†öøÿÿÿÿ8œ¿»–¹.
+lsquid:S2095Ğ"MUse try-with-resources or close this "MessageProducer" in a "finally" clause.(‚ƒ¸Â8œ¿»–¹.
+esquid:S3457‰"AFormat specifiers should be used instead of string concatenation.(Ò„¼Èşÿÿÿÿ8œ¿»–¹.
+_squid:S3457°"AFormat specifiers should be used instead of string concatenation.(èù«8œ¿»–¹.
+isquid:S2095ó"EUse try-with-resources or close this "Session" in a "finally" clause.(åŞäúÿÿÿÿ8œ¿»–¹.
+esquid:S3457¤"AFormat specifiers should be used instead of string concatenation.(Âµ½şùÿÿÿÿ8œ¿»–¹.
+Vsquid:S1905ê"2Remove this unnecessary cast to "MessageConsumer".(¾¤†öøÿÿÿÿ8œ¿»–¹.
+lsquid:S2095Ü"MUse try-with-resources or close this "MessageProducer" in a "finally" clause.(‚ƒ¸Â8œ¿»–¹.
+Qsquid:S1905Ü"2Remove this unnecessary cast to "MessageProducer".(‚ƒ¸Â8œ¿»–¹.
+xsquid:S2293ğ"YReplace the type specification in this constructor call with the diamond operator ("<>").(«¶Œ8Úº–¹.
+esquid:S3457©"AFormat specifiers should be used instead of string concatenation.(œºëùÿÿÿÿ8œ¿»–¹.
+„squid:S1192º"`Define a constant instead of duplicating this literal "org.apache.activemq:BrokerName=" 9 times.(î¤Ïğşÿÿÿÿ8Úº–¹.
+esquid:S3457™"AFormat specifiers should be used instead of string concatenation.(ğä¶†ûÿÿÿÿ8œ¿»–¹.
+Qsquid:S1905Ğ"2Remove this unnecessary cast to "MessageProducer".(‚ƒ¸Â8œ¿»–¹.
+ksquid:S00112»"FDefine and throw a dedicated exception instead of using a generic one.(’ÕÌ»üÿÿÿÿ8Úº–¹.
+esquid:S3457ƒ"AFormat specifiers should be used instead of string concatenation.(“ş•úıÿÿÿÿ8œ¿»–¹.
+xsquid:S2293Í"YReplace the type specification in this constructor call with the diamond operator ("<>").(«¶Œ8Úº–¹.
+}squid:S2293¨"YReplace the type specification in this constructor call with the diamond operator ("<>").(œÿÃ¯úÿÿÿÿ8Úº–¹.
+qsquid:S2095ê"MUse try-with-resources or close this "MessageConsumer" in a "finally" clause.(¾¤†öøÿÿÿÿ8œ¿»–¹.
+ª%squid:RedundantThrowsDeclarationCheck»"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(’ÕÌ»üÿÿÿÿ8œ¿»–¹.
+`squid:S3457¡"AFormat specifiers should be used instead of string concatenation.(Æ±µƒ8œ¿»–¹.
+`squid:S3457 "AFormat specifiers should be used instead of string concatenation.(©üËû8œ¿»–¹.
+V
+squid:S106ì"9Replace this use of System.out or System.err by a logger.(­£38Úº–¹.
+ksquid:S00112§"FDefine and throw a dedicated exception instead of using a generic one.(Ó‡Ğµúÿÿÿÿ8Úº–¹.
+Nsquid:S20657"0Remove the "transient" modifier from this field.(Ë’ãØ8Úº–¹.
+asquid:S1596_">Replace "Collections.EMPTY_LIST" by "Collections.emptyList()".(÷ƒ¨öúÿÿÿÿ8Úº–¹.
+esquid:S3457"AFormat specifiers should be used instead of string concatenation.(°éÊ‡ûÿÿÿÿ8œ¿»–¹.
+`squid:S3457†"AFormat specifiers should be used instead of string concatenation.(’ì©¦8œ¿»–¹.
+nsquid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(Šúœåşÿÿÿÿ8Úº–¹.
+qsquid:S2095ö"MUse try-with-resources or close this "MessageConsumer" in a "finally" clause.(¾¤†öøÿÿÿÿ8œ¿»–¹.
+~squid:S1488¹"ZImmediately return this expression instead of assigning it to the temporary variable "cf".(ØªÚıÿÿÿÿ8Úº–¹.
+ksquid:S00112¸"FDefine and throw a dedicated exception instead of using a generic one.(èİÎÑşÿÿÿÿ8Úº–¹.
+asquid:S1596{">Replace "Collections.EMPTY_LIST" by "Collections.emptyList()".(÷ƒ¨öúÿÿÿÿ8Úº–¹.
+isquid:S2095ç"EUse try-with-resources or close this "Session" in a "finally" clause.(åŞäúÿÿÿÿ8œ¿»–¹.
+}squid:S2293ß"YReplace the type specification in this constructor call with the diamond operator ("<>").(Õç•¥ûÿÿÿÿ8Úº–¹.
+esquid:S3457®"AFormat specifiers should be used instead of string concatenation.(Õ¡©øÿÿÿÿ8œ¿»–¹.
+esquid:S3457¨"AFormat specifiers should be used instead of string concatenation.(Ú„©Ÿıÿÿÿÿ8œ¿»–¹.
+esquid:S3457…"AFormat specifiers should be used instead of string concatenation.(Ù àãüÿÿÿÿ8œ¿»–¹.
+esquid:S3457¢"AFormat specifiers should be used instead of string concatenation.(§„Ğîşÿÿÿÿ8œ¿»–¹.
+`squid:S3457¯"AFormat specifiers should be used instead of string concatenation.(Œµ©ä8œ¿»–¹.
+`squid:S3457¶"AFormat specifiers should be used instead of string concatenation.(¦ÏÖç8œ¿»–¹.
+_squid:S3457"AFormat specifiers should be used instead of string concatenation.(©‘m8œ¿»–¹.

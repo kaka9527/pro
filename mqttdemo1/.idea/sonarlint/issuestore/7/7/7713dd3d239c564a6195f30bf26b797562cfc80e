@@ -1,0 +1,26 @@
+
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÜªýÝ8®ÐË—º.
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Œƒ¦Ç8®ÐË—º.
+Œ"squid:ClassVariableVisibilityCheck"RMake topics a static final constant or non-public and provide accessors if needed.(ÒàËØøÿÿÿÿ8®ÐË—º.
+¥squid:S1186‹"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ŸðÉ¤úÿÿÿÿ8Á§î¾º.
+nsquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(‡ó³¤øÿÿÿÿ8é°½º.
+isquid:CommentedOutCodeLineS"<This block of commented-out lines of code should be removed.(Å“›Ø8úš·½º.
+nsquid:CommentedOutCodeLinex"<This block of commented-out lines of code should be removed.(€«ßˆýÿÿÿÿ8Ó˜×¿º.
+Fsquid:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ8Æã–¿º.
+osquid:CommentedOutCodeLine¥"<This block of commented-out lines of code should be removed.(çÈ¶¸üÿÿÿÿ8¹Ç˜¾º.
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ï·óœûÿÿÿÿ8®ÐË—º.
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ð÷øšýÿÿÿÿ8®ÐË—º.
+osquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(›—Ïúÿÿÿÿ8§…ô¾º.
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(™ûðÔ8®ÐË—º.
+@squid:S2386"Make this member "protected".(ÒàËØøÿÿÿÿ8®ÐË—º.
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÄØÕ¡8…ÄÞ—».
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(†ÚÊ­þÿÿÿÿ8®ÐË—º.
+Gsquid:S1148£"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÇÅÏ—º.
+Gsquid:S1148"#Use a logger to log this exception.(¥…ãýýÿÿÿÿ8äÛò¾º.
+nsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(»Ä£¶úÿÿÿÿ8Øô—º.
+Osquid:S1444",Make this "public static topics" field final(ÒàËØøÿÿÿÿ8®ÐË—º.
+Gsquid:S1148–"#Use a logger to log this exception.(¥…ãýýÿÿÿÿ8äÛò¾º.
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ºÅÝüÿÿÿÿ8®ÐË—º.
+nsquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(ù•Ý©øÿÿÿÿ8ÙŒ´½º.
+nsquid:CommentedOutCodeLineg"<This block of commented-out lines of code should be removed.(€«ßˆýÿÿÿÿ8ÜÁ×¿º.
+Ksquid:S1068"-Remove this unused "DEVICE_ID" private field.(ÄØÕ¡8£§ª˜».

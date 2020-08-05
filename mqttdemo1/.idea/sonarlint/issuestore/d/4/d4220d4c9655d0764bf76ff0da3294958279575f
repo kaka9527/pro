@@ -1,0 +1,10 @@
+
+jsquid:S00112J"FDefine and throw a dedicated exception instead of using a generic one.(ƒŽƒÛúÿÿÿÿ8‰ ÔÎ·.
+asquid:S1155*">Use isEmpty() to check whether the collection is empty or not.(‹ŸÜ¨ùÿÿÿÿ8Õ–ÖÎ·.
+asquid:S1155#">Use isEmpty() to check whether the collection is empty or not.(®–ÿ…þÿÿÿÿ8Õ–ÖÎ·.
+Msquid:S00108*")Either remove or fill this block of code.(‹ŸÜ¨ùÿÿÿÿ8‰ ÔÎ·.
+|squid:S1450"YRemove the "currentObj" field and declare it as a local variable in the relevant methods.(À¼¡¶üÿÿÿÿ8‰ ÔÎ·.
+Hsquid:S1905,"*Remove this unnecessary cast to "Session".(×ø˜×8Õ–ÖÎ·.
+esquid:S00112""FDefine and throw a dedicated exception instead of using a generic one.(ªàÈÜ8‰ ÔÎ·.
+asquid:S1155(">Use isEmpty() to check whether the collection is empty or not.(§‹ª€ùÿÿÿÿ8Õ–ÖÎ·.
+Hsquid:S1905/"*Remove this unnecessary cast to "Session".(×ø˜×8Õ–ÖÎ·.

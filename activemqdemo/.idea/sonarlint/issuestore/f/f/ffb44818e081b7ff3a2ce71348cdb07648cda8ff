@@ -1,0 +1,24 @@
+
+msquid:S4201È"IRemove this unnecessary null check; "instanceof" returns false for nulls.(³°Õşÿÿÿÿ8È¯ğ¸.
+`squid:S3457—"AFormat specifiers should be used instead of string concatenation.(¦Ğğ¬8é°‡ğ¸.
+nsquid:CommentedOutCodeLinel"<This block of commented-out lines of code should be removed.(œ¥€¾ÿÿÿÿÿ8¹½Ö·.
+isquid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(ÿë8ĞÉ÷·.
+Msquid:S1068%"/Remove this unused "PACKET_SIZE" private field.(¶¥ã 8»“û·.
+_squid:S3457g"AFormat specifiers should be used instead of string concatenation.(É”íè8·ŠñÊ·.
+^squid:S3457m"AFormat specifiers should be used instead of string concatenation.(¹Òñ58Ÿ™Î·.
+Csquid:S2629¹"$Invoke method(s) only conditionally.(è°È€8é°‡ğ¸.
+qsquid:ModifiersOrderCheck%"EReorder the modifiers to comply with the Java Language Specification.(¶¥ã 8÷ïö·.
+Vsquid:S2629Ó"7Use the built-in formatting to construct this argument.(ù„Óß8˜ú¸.
+lsquid:S42013"IRemove this unnecessary null check; "instanceof" returns false for nulls.(„ïâüÿÿÿÿ8Û¨Ü÷¶.
+isquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(Ôãæ–8üç÷·.
+esquid:S3457Í"AFormat specifiers should be used instead of string concatenation.(©ÅİÊúÿÿÿÿ8ÒêŸğ¸.
+dsquid:HiddenFieldCheck7"<Rename "fileName" which hides the field declared at line 35.(è†ã8ä…šË·.
+`squid:S3457Ó"AFormat specifiers should be used instead of string concatenation.(ù„Óß8˜ú¸.
+Tsquid:S2629m"7Use the built-in formatting to construct this argument.(¹Òñ58Ÿ™Î·.
+:squid:S3626½"Remove this redundant jump.(ÉŠ©ƒ8é°‡ğ¸.
+isquid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(¼ÚŒ8¸³÷·.
+{squid:S2629—"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(¦Ğğ¬8é°‡ğ¸.
+Usquid:S2629g"7Use the built-in formatting to construct this argument.(É”íè8Í»–Ë·.
+lsquid:S2095:"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(®•Ïş8úÂäÊ·.
+[squid:S2629Í"7Use the built-in formatting to construct this argument.(©ÅİÊúÿÿÿÿ8ÒêŸğ¸.
+Msquid:S20932"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8¶÷İ÷¶.

@@ -1,0 +1,31 @@
+
+^squid:S2142ƒ"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+@squid:S1148„"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+isquid:CommentedOutCodeLineb"<This block of commented-out lines of code should be removed.(Ÿˆ”Ò8þàÐÊ·.
+T
+squid:S106m"9Replace this use of System.out or System.err by a logger.(ÔöÈùþÿÿÿÿ
+T
+squid:S106P"9Replace this use of System.out or System.err by a logger.(‘™‘üùÿÿÿÿ
+Isquid:S1444"-Make this "public static readstr" field final(Ìï„ýÿÿÿÿÿ
+†"squid:ClassVariableVisibilityCheck"SMake readstr a static final constant or non-public and provide accessors if needed.(Ìï„ýÿÿÿÿÿ
+bsquid:S1192g"FDefine a constant instead of duplicating this literal "notok" 6 times.(‘Õµ“ýÿÿÿÿ
+T
+squid:S106]"9Replace this use of System.out or System.err by a logger.(± Öúÿÿÿÿ
+O
+squid:S106f"9Replace this use of System.out or System.err by a logger.(À«§œ
+Ysquid:S1481,"6Remove this unused "completionService" local variable.(ÌŠÆÙøÿÿÿÿ8¢Û€«·.
+nsquid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(É”ÀÊÿÿÿÿÿ8Óô«·.
+T
+squid:S106w"9Replace this use of System.out or System.err by a logger.(þß¡ÿÿÿÿÿ
+„squid:UselessImportCheck"TRemove this unnecessary import: same package classes are always implicitly imported.(³¼óšýÿÿÿÿ8½µä«·.
+O
+squid:S106="9Replace this use of System.out or System.err by a logger.(»Ç§
+nsquid:S3776$"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(Ÿâ•–øÿÿÿÿ
+O
+squid:S106["9Replace this use of System.out or System.err by a logger.(´Áø¯
+hsquid:S1854,"ERemove this useless assignment to local variable "completionService".(ÌŠÆÙøÿÿÿÿ8¢Û€«·.
+nsquid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(Öðª¸øÿÿÿÿ8æ‚ª·.
+O
+squid:S106r"9Replace this use of System.out or System.err by a logger.(Ó¨°
+T
+squid:S106}"9Replace this use of System.out or System.err by a logger.(Û–ü¨øÿÿÿÿ

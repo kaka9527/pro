@@ -1,0 +1,5 @@
+
+vsquid:UselessImportCheck"FRemove this unused import 'org.eclipse.paho.client.mqttv3.IMqttToken'.(÷ïÛ¸şÿÿÿÿ8Ÿ³÷¹.
+Ÿsquid:S1186
+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÖÄÛ8òÜ÷¹.
+zsquid:UselessImportCheck"ORemove this unused import 'org.eclipse.paho.client.mqttv3.IMqttActionListener'.(»«¦¯8Ç“÷¹.

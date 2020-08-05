@@ -1,0 +1,16 @@
+
+]squid:UselessImportCheck"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8øÜ«ˆ¶.
+bsquid:S2147d"DCombine this catch with the one at line 98, which has the same body.(ï­£Ä8 ´°†¶.
+bsquid:UselessImportCheck	"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8øÜ«ˆ¶.
+?squid:S1148r"#Use a logger to log this exception.(ğø¡üÿÿÿÿ
+[
+squid:S106`"9Replace this use of System.out or System.err by a logger.(úİÖ—şÿÿÿÿ8Ñ¹É€¶.
+dsquid:S2142b"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8 ´°†¶.
+?squid:S1148e"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+[squid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Äé¿İµ.
+jsquid:UselessImportCheck":Remove this unused import 'java.util.concurrent.Callable'.(¾×¶îûÿÿÿÿ8—­«†¶.
+Fsquid:S1148c"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8 ´°†¶.
+T
+squid:S106H"9Replace this use of System.out or System.err by a logger.(Å‡ öùÿÿÿÿ
+T
+squid:S106q"9Replace this use of System.out or System.err by a logger.(‘’…«şÿÿÿÿ

@@ -1,0 +1,12 @@
+
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Òó‰µøÿÿÿÿ8í§›÷¶.
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ó»‹£8í§›÷¶.
+qsquid:UselessImportCheck"FRemove this unused import 'org.apache.activemq.command.ActiveMQQueue'.(Î¤¾ç8í§›÷¶.
+wsquid:UselessImportCheck"LRemove this unused import 'org.apache.activemq.command.ActiveMQDestination'.(ş‡£î8Ô˜™¢·.
+bsquid:S21475"DCombine this catch with the one at line 51, which has the same body.(”ı¾8í§›÷¶.
+Fsquid:S1148="#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£Ñƒ¤·.
+ssquid:UselessImportCheck"HRemove this unused import 'org.apache.activemq.ActiveMQMessageConsumer'.(ÛÚ¤8·›³Ì¹.
+nsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(˜ùûÇıÿÿÿÿ8Ö©•¹».
+Qsquid:S1481'".Remove this unused "publisher" local variable.(²íáİşÿÿÿÿ8Ö©•¹».
+Fsquid:S11486"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8í§›÷¶.
+Fsquid:S11484"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8í§›÷¶.

@@ -1,0 +1,30 @@
+
+Fsquid:S2189Ã""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ8„¿¤¾º.
+Œ"squid:ClassVariableVisibilityCheck"RMake topics a static final constant or non-public and provide accessors if needed.(ÒàËØøÿÿÿÿ8¥Š×—º.
+Gsquid:S1148Ú"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8¥Š×—º.
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ˆ¢ÏÖ8¥Š×—º.
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Œƒ¦Ç8¥Š×—º.
+@squid:S2386"Make this member "protected".(ÒàËØøÿÿÿÿ8¥Š×—º.
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ßµæªøÿÿÿÿ8¥Š×—º.
+osquid:CommentedOutCodeLineÜ"<This block of commented-out lines of code should be removed.(çÈ¶¸üÿÿÿÿ8ÅŽ©¾º.
+dsquid:S3457d"AFormat specifiers should be used instead of string concatenation.(à‚Ìúÿÿÿÿÿ8Âá¦›º.
+^squid:S3457l"AFormat specifiers should be used instead of string concatenation.(ôüÓ<8˜´Þ—º.
+isquid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(Ž˜¢Ó8¥Š×—º.
+nsquid:CommentedOutCodeLineP"<This block of commented-out lines of code should be removed.(ÓýÙ€ùÿÿÿÿ8¥Š×—º.
+nsquid:CommentedOutCodeLine^"<This block of commented-out lines of code should be removed.(Æ¿Í§ûÿÿÿÿ8Ð™é›º.
+jsquid:CommentedOutCodeLine‘"<This block of commented-out lines of code should be removed.(Ã˜àÛ8®Ì¢¾º.
+nsquid:CommentedOutCodeLineJ"<This block of commented-out lines of code should be removed.(ÄÖ“áþÿÿÿÿ8¥Š×—º.
+esquid:S2142Ò"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ëï¥¾º.
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ºÅÝüÿÿÿÿ8¥Š×—º.
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ö¢¬Ò8¥Š×—º.
+dsquid:S3457h"AFormat specifiers should be used instead of string concatenation.(ÐµÆºüÿÿÿÿ8Âá¦›º.
+jsquid:CommentedOutCodeLineµ"<This block of commented-out lines of code should be removed.(Ù–£¬8¦æ£¾º.
+hsquid:CommentedOutCodeLinep"<This block of commented-out lines of code should be removed.(Á±€8ýÙþ½º.
+Osquid:S1444",Make this "public static topics" field final(ÒàËØøÿÿÿÿ8¥Š×—º.
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(÷ÔÓ™8¥Š×—º.
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿æê“þÿÿÿÿ8¡ðô›º.
+isquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(…õƒÈ8Î…­¾º.
+esquid:S3457®"AFormat specifiers should be used instead of string concatenation.(à‚¾¦øÿÿÿÿ8¯áÿ½º.
+isquid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(Š‘ÆÞ8¥Š×—º.
+hsquid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(Ñ§¤ 8¥Š×—º.
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ð÷øšýÿÿÿÿ8¥Š×—º.

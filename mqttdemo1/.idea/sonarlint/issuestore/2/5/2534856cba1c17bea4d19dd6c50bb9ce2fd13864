@@ -1,0 +1,20 @@
+
+psquid:S00117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…Æá³8Šù»„µ.
+‹squid:UselessImportCheck"[Remove this unused import 'org.springframework.integration.mqtt.event.MqttSubscribedEvent'.(ÖÉÝÚûÿÿÿÿ8¿£Òõ¹.
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñâÀ”ûÿÿÿÿ8¯Ó¹Ü¶.
+hsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(ï—á]8ëÀÖ¶».
+Jsquid:S1068",Remove this unused "RETAINED" private field.(ôøä¤8Ý­ç¶».
+isquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(¢¤”8’Ÿý»».
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(õÕŽû8Šù»„µ.
+Fsquid:S1148["#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ãúõ¤·.
+Fsquid:S1148!"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ëÀÖ¶».
+dsquid:S2142 "FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ëÀÖ¶».
+Ksquid:S1068"-Remove this unused "scheduler" private field.(“„¹Í8Šù»„µ.
+nsquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(ï‡üÂþÿÿÿÿ8áî¹Ã¹.
+Zsquid:UnusedPrivateMethodU".Remove this unused private "onDestory" method.(»‚ØÛ8¤›‘û¸.
+ysquid:S1450"VRemove the "options" field and declare it as a local variable in the relevant methods.(çæï¬ýÿÿÿÿ8ñáŠÍ¹.
+msquid:S2095)"OUse try-with-resources or close this "MemoryPersistence" in a "finally" clause.(ý¢½Á8û¡æî¸.
+Ÿsquid:S1186b"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ýü²ó8¿£Òõ¹.
+ysquid:S2068"V'passWord' detected in this expression, review this potentially hard-coded credential.(¶«”øÿÿÿÿ8Šù»„µ.
+nsquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(¶ŒÈÝøÿÿÿÿ8çÿåº».
+Fsquid:S1148Q"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Šù»„µ.

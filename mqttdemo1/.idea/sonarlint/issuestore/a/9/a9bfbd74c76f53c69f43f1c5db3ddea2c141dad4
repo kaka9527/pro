@@ -1,0 +1,21 @@
+
+_squid:S3457C"AFormat specifiers should be used instead of string concatenation.(ãÆþ’8±Šà÷¹.
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(´ŒÊ­øÿÿÿÿ8œ¡ý÷¹.
+_squid:S3457/"AFormat specifiers should be used instead of string concatenation.(Ï÷–8±Šà÷¹.
+dsquid:S3457>"AFormat specifiers should be used instead of string concatenation.(—×µ¾ùÿÿÿÿ8±Šà÷¹.
+Usquid:S26294"7Use the built-in formatting to construct this argument.(—íÈ…8±Šà÷¹.
+_squid:S34574"AFormat specifiers should be used instead of string concatenation.(—íÈ…8±Šà÷¹.
+Usquid:S2629*"7Use the built-in formatting to construct this argument.(ìëÏâ8±Šà÷¹.
+_squid:S3457*"AFormat specifiers should be used instead of string concatenation.(ìëÏâ8±Šà÷¹.
+_squid:S3457$"AFormat specifiers should be used instead of string concatenation.(Ñÿ—Ó8±Šà÷¹.
+ysquid:S00115
+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Úÿ·Ç8œ¡ý÷¹.
+Usquid:S2629/"7Use the built-in formatting to construct this argument.(Ï÷–8±Šà÷¹.
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(óÃæ8œ¡ý÷¹.
+Usquid:S26299"7Use the built-in formatting to construct this argument.(©‚ì¾8±Šà÷¹.
+Zsquid:S2629>"7Use the built-in formatting to construct this argument.(—×µ¾ùÿÿÿÿ8±Šà÷¹.
+Usquid:S2629C"7Use the built-in formatting to construct this argument.(ãÆþ’8±Šà÷¹.
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ýž—»ûÿÿÿÿ8œ¡ý÷¹.
+ysquid:S2068"V'passWord' detected in this expression, review this potentially hard-coded credential.(´ŒÊ­øÿÿÿÿ8Ÿ¥Ú÷¹.
+_squid:S34579"AFormat specifiers should be used instead of string concatenation.(©‚ì¾8±Šà÷¹.
+Usquid:S2629$"7Use the built-in formatting to construct this argument.(Ñÿ—Ó8±Šà÷¹.

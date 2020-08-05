@@ -1,0 +1,79 @@
+
+@squid:S2111Ñ"!Use "BigDecimal.valueOf" instead.(ÿó•˜8·ßª·.
+dsquid:S2142g"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8µÜ’ª·.
+V
+squid:S106…"9Replace this use of System.out or System.err by a logger.(Ö­ßx8·ßª·.
+T
+squid:S1066"9Replace this use of System.out or System.err by a logger.(Î¾œ¥ùÿÿÿÿ
+T
+squid:S106?"9Replace this use of System.out or System.err by a logger.(Á¤ÿ¤ûÿÿÿÿ
+rsquid:S00100o"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚœËµşÿÿÿÿ8µÜ’ª·.
+lsquid:S2095¢"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(üºˆÃ8·ßª·.
+Gsquid:S1148‘"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8·ßª·.
+W
+squid:S106£"9Replace this use of System.out or System.err by a logger.(¼¹äî8·ßª·.
+Gsquid:S1148³"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8·ßª·.
+\
+squid:S106¤"9Replace this use of System.out or System.err by a logger.(õ·›¹øÿÿÿÿ8·ßª·.
+jsquid:CommentedOutCodeLine­"<This block of commented-out lines of code should be removed.(ç²À 8·ßª·.
+usquid:S3776o"RRefactor this method to reduce its Cognitive Complexity from 64 to the 15 allowed.(ÚœËµşÿÿÿÿ8µÜ’ª·.
+@squid:S1643á"Use a StringBuilder instead.(“£Ğ‹ıÿÿÿÿ8¯‰äª·.
+Gsquid:S1148®"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8·ßª·.
+@squid:S2111×"!Use "BigDecimal.valueOf" instead.(ÿó•˜8·ßª·.
+jsquid:CommentedOutCodeLine©"<This block of commented-out lines of code should be removed.(Š¹‘Ù8·ßª·.
+\
+squid:S106Ş"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8·ßª·.
+W
+squid:S106ğ"9Replace this use of System.out or System.err by a logger.(¼¹äî8·ßª·.
+\
+squid:S106º"9Replace this use of System.out or System.err by a logger.(Şàš¬øÿÿÿÿ8·ßª·.
+\
+squid:S106—"9Replace this use of System.out or System.err by a logger.(£Â™âşÿÿÿÿ8·ßª·.
+V
+squid:S106·"9Replace this use of System.out or System.err by a logger.(Ö­ßx8·ßª·.
+W
+squid:S106ª"9Replace this use of System.out or System.err by a logger.(šÄ½›8·ßª·.
+\
+squid:S106³"9Replace this use of System.out or System.err by a logger.(¸Á­Óûÿÿÿÿ8·ßª·.
+nsquid:CommentedOutCodeLiney"<This block of commented-out lines of code should be removed.(ÙÂ¯Ôıÿÿÿÿ8µÜ’ª·.
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(õÈ§İüÿÿÿÿ
+@squid:S2111É"!Use "BigDecimal.valueOf" instead.(ÿó•˜8·ßª·.
+\
+squid:S106²"9Replace this use of System.out or System.err by a logger.(Şàš¬øÿÿÿÿ8†çÉª·.
+Gsquid:S1148“"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8·ßª·.
+W
+squid:S106¦"9Replace this use of System.out or System.err by a logger.(Á‹ïë8·ßª·.
+T
+squid:S106$"9Replace this use of System.out or System.err by a logger.(¾Äúÿÿÿÿ
+bsquid:S2147e"DCombine this catch with the one at line 99, which has the same body.(ï­£Ä8µÜ’ª·.
+bsquid:S2147g"DCombine this catch with the one at line 99, which has the same body.(ä ¹€8µÜ’ª·.
+Fsquid:S1148h"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8µÜ’ª·.
+esquid:S2142’"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8·ßª·.
+dsquid:S2147’"ECombine this catch with the one at line 270, which has the same body.(ä ¹€8·ßª·.
+[
+squid:S106S"9Replace this use of System.out or System.err by a logger.(¸Á­Óûÿÿÿÿ8µÜ’ª·.
+Psquid:S1118":Add a private constructor to hide the implicit public one.(â½Â[
+ysquid:S1192\"\Define a constant instead of duplicating this literal "ç¨‹åºé—®é¢˜ï¼Œæ›´æ–°å¤±è´¥" 3 times.(Ö­ßx8µÜ’ª·.
+\
+squid:S106å"9Replace this use of System.out or System.err by a logger.(ï“«»üÿÿÿÿ8·ßª·.
+Gsquid:S1481z")Remove this unused "stop" local variable.(º™8µÜ’ª·.
+T
+squid:S106'"9Replace this use of System.out or System.err by a logger.(³³š†øÿÿÿÿ
+@squid:S1643•"Use a StringBuilder instead.(½¨íÂşÿÿÿÿ8È¢áª·.
+psquid:S2095u"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(«ÄÒûÿÿÿÿ8µÜ’ª·.
+3squid:S16433"Use a StringBuilder instead.(€å‰û
+…squid:S1192S"bDefine a constant instead of duplicating this literal "å‘é€æ•°æ®é”™è¯¯é‡æ–°å‘é€ï¼" 3 times.(¸Á­Óûÿÿÿÿ8µÜ’ª·.
+Nsquid:S2093Ÿ"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8·ßª·.
+jsquid:CommentedOutCodeLine…"<This block of commented-out lines of code should be removed.(ÁÕì8µÜ’ª·.
+\
+squid:S106¯"9Replace this use of System.out or System.err by a logger.(Şàš¬øÿÿÿÿ8·ßª·.
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÈ§İüÿÿÿÿ
+dsquid:S2147"ECombine this catch with the one at line 270, which has the same body.(ï­£Ä8·ßª·.
+U
+squid:S106\"9Replace this use of System.out or System.err by a logger.(Ö­ßx8µÜ’ª·.
+\
+squid:S106"9Replace this use of System.out or System.err by a logger.(¸Á­Óûÿÿÿÿ8·ßª·.
+jsquid:CommentedOutCodeLine±"<This block of commented-out lines of code should be removed.(ç²À 8·ßª·.
+Gsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8·ßª·.
+Fsquid:S1148d"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8µÜ’ª·.
+Fsquid:S1148f"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8µÜ’ª·.

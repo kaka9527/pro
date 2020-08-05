@@ -1,0 +1,175 @@
+<beans
+  xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://activemq.apache.org/schema/core http://activemq.apache.org/schema/core/activemq-core.xsd">
+    <broker xmlns="http://activemq.apache.org/schema/core" brokerName="ckbroker" useJmx="false" persistent="true" advisorySupport="false" schedulePeriodForDestinationPurge="600000"
+            splitSystemUsageForProducersConsumers="true" producerSystemUsagePortion="60" consumerSystemUsagePortion="40" useShutdownHook="true">
+
+        <!--<persistenceFactory>
+            <journalPersistenceAdapterFactory journalLogFiles="5"  dataDirectory="../data"/>
+        </persistenceFactory>-->
+        <!--<bean xmlns="http://www.springframework.org/schema/beans" id="clientIdFilterDispatchPolicy" class="org.apache.activemq.broker.region.policy.ClientIdFilterDispatchPolicy"/>-->
+
+        <persistenceAdapter>
+            <kahaDB directory="./kahadb" enableIndexWriteAsync="true" preallocationStrategy="zeros" journalMaxFileLength="16mb"/>
+        </persistenceAdapter>
+
+
+        <destinationPolicy>
+            <policyMap>
+                <policyEntries>
+                    <!-- 定时清理没有用到的topic -->
+                    <!-- chuangkou.gateway.request.>  匹配 chuangkou/gateway/request/# -->
+                    <policyEntry topic="chuangkou.gateway.request.>" expireMessagesPeriod="30000" gcInactiveDestinations="true" inactiveTimoutBeforeGC="300000">
+                        <subscriptionRecoveryPolicy>
+                            <timedSubscriptionRecoveryPolicy recoverDuration="30000" />
+                        </subscriptionRecoveryPolicy>
+                        <deadLetterStrategy>
+                            <sharedDeadLetterStrategy processExpired="false"/>
+                        </deadLetterStrategy>
+                        <pendingMessageLimitStrategy>
+                            <constantPendingMessageLimitStrategy limit="1000"/>
+                        </pendingMessageLimitStrategy>
+                    </policyEntry>
+
+                    <!--expireMessagesPeriod=60000表示每隔60s检查消息是否过期-->
+                    <!--schedulePeriodForDestinationPurge：执行清理任务的周期；
+                    gcInactiveDestinations=true：表示启用清理功能；
+                    inactiveTimoutBeforeGC：queue或topic的超时时间，在规定的时间内，无有效订阅，没有入队记录，超时后就会被清理。-->
+                    <!--topic=>表示对所有topic都生效-->
+                    <policyEntry topic="chuangkou.gateway.>" expireMessagesPeriod="30000">
+                        <!--<dispatchPolicy>
+                            <clientIdFilterDispatchPolicy />
+                        </dispatchPolicy>-->
+                        <subscriptionRecoveryPolicy>
+                            <timedSubscriptionRecoveryPolicy recoverDuration="60000" />
+                        </subscriptionRecoveryPolicy>
+                        <!--processExpired为false表示过期消息不进入死信队列，即执行删除操作-->
+                        <deadLetterStrategy>
+                            <sharedDeadLetterStrategy processExpired="false"/>
+                        </deadLetterStrategy>
+                        <pendingMessageLimitStrategy>
+                            <constantPendingMessageLimitStrategy limit="1000"/>
+                        </pendingMessageLimitStrategy>
+                    </policyEntry>
+                    <policyEntry queue=">" expireMessagesPeriod="30000">
+                        <deadLetterStrategy>
+                            <!--processExpired为false表示过期消息不进入死信队列，即执行删除操作-->
+                            <sharedDeadLetterStrategy processExpired="false"  />
+                        </deadLetterStrategy>
+                    </policyEntry>
+
+                    <policyEntry topic="chuangkou.plateform.>" >
+                        <subscriptionRecoveryPolicy>
+                            <timedSubscriptionRecoveryPolicy recoverDuration="30000" />
+                        </subscriptionRecoveryPolicy>
+                        <deadLetterStrategy>
+                            <sharedDeadLetterStrategy processExpired="false"/>
+                        </deadLetterStrategy>
+                        <pendingMessageLimitStrategy>
+                            <constantPendingMessageLimitStrategy limit="1000"/>
+                        </pendingMessageLimitStrategy>
+                    </policyEntry>
+                </policyEntries>
+            </policyMap>
+        </destinationPolicy>
+
+        <!--<destinationPolicy>
+            <policyMap>
+                <policyEntries>
+                    <policyEntry producerFlowControl="false" memoryLimit="10mb">
+                        <dispatchPolicy>
+                            <strictOrderDispatchPolicy/>
+                        </dispatchPolicy>
+                        <subscriptionRecoveryPolicy>
+                            <lastImageSubscriptionRecoveryPolicy/>
+                        </subscriptionRecoveryPolicy>
+                    </policyEntry>
+                </policyEntries>
+            </policyMap>
+        </destinationPolicy>-->
+
+        <systemUsage>
+            <systemUsage sendFailIfNoSpaceAfterTimeout="3000">
+                <memoryUsage>
+                    <memoryUsage percentOfJvmHeap="70" />
+                </memoryUsage>
+                <storeUsage>
+                    <storeUsage limit="1 gb"/>
+                </storeUsage>
+                <tempUsage>
+                    <tempUsage limit="50 mb"/>
+                </tempUsage>
+            </systemUsage>
+        </systemUsage>
+
+        <managementContext>
+            <managementContext createConnector="false" suppressMBean="endpoint=dynamicProducer,endpoint=Consumer,connectionName=*,destinationName=ActiveMQ.Advisory.*"/>
+        </managementContext>
+
+        <!--
+            The transport connectors expose ActiveMQ over a given protocol to
+            clients and other brokers. For more information, see:
+
+            http://activemq.apache.org/configuring-transports.html
+        -->
+        <transportConnectors>
+            <!-- DOS protection, limit concurrent connections to 1000 and frame size to 100MB -->
+            <transportConnector name="openwire" uri="tcp://0.0.0.0:61616?wireFormat.maxInactivityDuration=0"/>
+            <!--&amp;transport.subscriptionStrategy=mqtt-virtual-topic-subscriptions-->
+            <transportConnector name="mqtt+nio" uri="mqtt+nio://0.0.0.0:1883?transport.defaultKeepAlive=30000&amp;maximumConnections=30000&amp;wireFormat.maxFrameSize=204857600" />
+        </transportConnectors>
+
+        <!--<networkConnectors>
+            <networkConnector uri="static:(tcp://0.0.0.0:61616?wireFormat.maxInactivityDuration=0)"/>
+        </networkConnectors>-->
+
+        <plugins>
+            <!--<authorizationPlugin>
+                 <map>
+                     <authorizationMap>
+                         <authorizationEntries>
+                             <authorizationEntry queue="queue.chuangkou.>" read="users" write="users" admin="users" />
+                             <authorizationEntry topic="queue.chuangkou.>" read="all" write="all" admin="all"/>
+                         </authorizationEntries>
+                         <tempDestinationAuthorizationEntry>
+                             <tempDestinationAuthorizationEntry read="admin" write="admin" admin="admin"/>
+                         </tempDestinationAuthorizationEntry>
+                     </authorizationMap>
+                 </map>
+            </authorizationPlugin>-->
+
+            <!-- 消息超时 -->
+            <timeStampingBrokerPlugin ttlCeiling="30000" zeroExpirationOverride="30000" />
+
+            <!-- 丢弃所有死信-->
+            <discardingDLQBrokerPlugin dropAll="true"  dropTemporaryTopics="true" dropTemporaryQueues="true" />
+            <!-- 丢弃指定死信-->
+            <!-- <discardingDLQBrokerPlugindropOnly="MY.EXAMPLE.TOPIC.29 MY.EXAMPLE.QUEUE.87" reportInterval="1000" />-->
+            <!--使用丢弃正则匹配到死信-->
+            <!--<discardingDLQBrokerPlugindropOnly="MY.EXAMPLE.TOPIC.[0-9]{3} MY.EXAMPLE.QUEUE.[0-9]{3}" reportInterval="3000"/>-->
+
+            <!-- 配置连接的用户名和密码  -->
+            <!--<simpleAuthenticationPlugin>
+                <users>
+                    <authenticationUser username="chuangkou" password="chuangkou88" groups="users,admins"/>
+                </users>
+            </simpleAuthenticationPlugin>-->
+            <!-- 配置插件类 -->
+            <bean xmlns="http://www.springframework.org/schema/beans" id="pduMqttPlugin" class="com.tin.mqtt.PduMqttPlugin"/>
+        </plugins>
+        <!--<persistenceAdapter>
+            <jdbcPersistenceAdapter dataSource="#mysql-ds" createTablesOnStartup="false"/>
+        </persistenceAdapter>-->
+    </broker>
+
+    <!--<bean id="mysql-ds" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://192.168.10.15:3306/activemq?relaxAutoCommit=true"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root123456"/>
+        <property name="poolPreparedStatements" value="true"/>
+    </bean>-->
+
+</beans>

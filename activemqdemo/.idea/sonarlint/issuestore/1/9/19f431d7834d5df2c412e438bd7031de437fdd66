@@ -1,0 +1,29 @@
+
+Wsquid:S1444"4Make this "public static MQTT_KEEPALIVE" field final(ÜèÂ‹úÿÿÿÿ8…áÎû¸.
+Vsquid:S1444"3Make this "public static MQTT_USERNAME" field final(Ğ¤ûÿÿÿÿ8…áÎû¸.
+Fsquid:S11486"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8…áÎû¸.
+vsquid:S3008"XRename this field "MQTT_CLIENTID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çåì¥8…áÎû¸.
+|squid:S3008"YRename this field "MQTT_KEEPALIVE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜèÂ‹úÿÿÿÿ8…áÎû¸.
+Msquid:S1444"/Make this "public static MQTT_HOST" field final(Ø‚¸¨8…áÎû¸.
+Lsquid:S3077".Remove the "volatile" keyword from this field.(€óØ¯8…áÎû¸.
+usquid:S3008"WRename this field "MQTT_TIMEOUT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³Œ¯ª8…áÎû¸.
+_squid:S3457!"AFormat specifiers should be used instead of string concatenation.(ˆÌ®²8…áÎû¸.
+nsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.( Ëü²øÿÿÿÿ8…áÎû¸.
+“"squid:ClassVariableVisibilityCheck"YMake MQTT_USERNAME a static final constant or non-public and provide accessors if needed.(Ğ¤ûÿÿÿÿ8…áÎû¸.
+Psquid:S1444"2Make this "public static MQTT_TIMEOUT" field final(³Œ¯ª8…áÎû¸.
+rsquid:S3008"TRename this field "MQTT_HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø‚¸¨8…áÎû¸.
+Usquid:S2629!"7Use the built-in formatting to construct this argument.(ˆÌ®²8…áÎû¸.
+“"squid:ClassVariableVisibilityCheck"YMake MQTT_PASSWORD a static final constant or non-public and provide accessors if needed.(Ÿï€‘üÿÿÿÿ8…áÎû¸.
+Fsquid:S1148Y"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8…áÎû¸.
+Š"squid:ClassVariableVisibilityCheck"UMake MQTT_HOST a static final constant or non-public and provide accessors if needed.(Ø‚¸¨8…áÎû¸.
+"squid:ClassVariableVisibilityCheck"YMake MQTT_CLIENTID a static final constant or non-public and provide accessors if needed.(Çåì¥8…áÎû¸.
+Vsquid:S1444"3Make this "public static MQTT_PASSWORD" field final(Ÿï€‘üÿÿÿÿ8…áÎû¸.
+”"squid:ClassVariableVisibilityCheck"ZMake MQTT_KEEPALIVE a static final constant or non-public and provide accessors if needed.(ÜèÂ‹úÿÿÿÿ8…áÎû¸.
+Fsquid:S1148p"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8…áÎû¸.
+{squid:S3008"XRename this field "MQTT_PASSWORD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿï€‘üÿÿÿÿ8…áÎû¸.
+"squid:ClassVariableVisibilityCheck"XMake MQTT_TIMEOUT a static final constant or non-public and provide accessors if needed.(³Œ¯ª8…áÎû¸.
+{squid:S3008"XRename this field "MQTT_USERNAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¤ûÿÿÿÿ8…áÎû¸.
+Xsquid:S1141/"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8…áÎû¸.
+Qsquid:S1444"3Make this "public static MQTT_CLIENTID" field final(Çåì¥8…áÎû¸.
+jsquid:S2259V"GA "NullPointerException" could be thrown; "mqttTopic" is nullable here.(¾Ûåçøÿÿÿÿ8…áÎû¸.
+Fsquid:S11483"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8…áÎû¸.

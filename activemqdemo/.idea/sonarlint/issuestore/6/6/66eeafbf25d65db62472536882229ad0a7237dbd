@@ -1,0 +1,39 @@
+
+~squid:S1149Ğ"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰8ÕÁ·µ.
+\squid:S1854ÿ"=Remove this useless assignment to local variable "controlID".(Éô‡Ü8ÕÁ·µ.
+@squid:S1148ú"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Qsquid:S1118
+":Add a private constructor to hide the implicit public one.(ç¶ñş
+@squid:S1148ª"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+~squid:S1149Ş"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰8ÕÁ·µ.
+O
+squid:S106ö"9Replace this use of System.out or System.err by a logger.(êëú.
+]squid:UnusedPrivateMethod–"0Remove this unused private "toHexString" method.(‹àî…8ÕÁ·µ.
+bsquid:CommentedOutCodeLinep"<This block of commented-out lines of code should be removed.(Ù“ì‘
+isquid:S00117Õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ş”3
+fsquid:S1192ˆ"IDefine a constant instead of duplicating this literal "FEFEFEFE" 3 times.(ÓÊÇÄüÿÿÿÿ
+:squid:S1643ñ"Use a StringBuilder instead.(Şæ¥,8ÕÁ·µ.
+@squid:S1643Á"Use a StringBuilder instead.(Ã‚üüÿÿÿÿ8ÕÁ·µ.
+@squid:S1643™"Use a StringBuilder instead.(Ë¬àúÿÿÿÿ8ÕÁ·µ.
+Wsquid:S1854Ì"?Remove this useless assignment to local variable "receiveHead".(¨ËÃò
+Hsquid:S1481Ì"0Remove this unused "receiveHead" local variable.(¨ËÃò
+@squid:S1643®"Use a StringBuilder instead.(Ã‚üüÿÿÿÿ8ÕÁ·µ.
+@squid:S1659Ÿ"!Declare "tmp" on a separate line.(—ı¸8ÕÁ·µ.
+Vsquid:S1854Í">Remove this useless assignment to local variable "receiveEnd".(‚‹”©
+Gsquid:S1481Í"/Remove this unused "receiveEnd" local variable.(‚‹”©
+Gsquid:S1148Û"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÕÁ·µ.
+Lsquid:S1066Œ"/Merge this if statement with the enclosing one.(ËäŞ×üÿÿÿÿ
+?squid:S1148n"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Vsquid:S2130’"9Use "Integer.parseInt" for this string-to-int conversion.(•è§Åúÿÿÿÿ
+U
+squid:S106ñ"9Replace this use of System.out or System.err by a logger.(ğİÖîûÿÿÿÿ
+@squid:S1643ï"Use a StringBuilder instead.(Ë¬àúÿÿÿÿ8ÕÁ·µ.
+Msquid:S1481ÿ".Remove this unused "controlID" local variable.(Éô‡Ü8ÕÁ·µ.
+}squid:S1488ƒ"^Immediately return this expression instead of assigning it to the temporary variable "binStr".(‡­8ÕÁ·µ.
+U
+squid:S106í"9Replace this use of System.out or System.err by a logger.(Üî£˜úÿÿÿÿ
+Gsquid:S1148Ÿ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÕÁ·µ.
+Vsquid:S2589º"7Remove this expression which always evaluates to "true"(şã©œ8¥İ·µ.
+esquid:UselessImportCheck"5Remove this unused import 'com.tin.vo.MessageUpdate'.(Ş§•éûÿÿÿÿ8‚öò·.
+;squid:S1643¤"Use a StringBuilder instead.(Ö ÃÈ8ÕÁ·µ.
+gsquid:S5361»"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ç…ª 8¥İ·µ.

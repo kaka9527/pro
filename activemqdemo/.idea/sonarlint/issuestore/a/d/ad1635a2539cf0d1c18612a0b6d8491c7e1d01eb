@@ -1,0 +1,44 @@
+
+gsquid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(›Äúëûÿÿÿÿ
+Vsquid:UselessImportCheck"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ
+lsquid:UselessImportCheck"CRemove this unused import 'io.netty.channel.ChannelHandlerContext'.(²ÕŽ¢ùÿÿÿÿ
+Zsquid:UselessImportCheck"6Remove this unused import 'java.nio.channels.Channel'.(÷ê¹
+Ssquid:UselessImportCheck"/Remove this unused import 'java.util.Calendar'.(ÿÛö´
+@squid:S1148Œ"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+fsquid:S2674Y"JCheck the return value of the "read" call to see how many bytes were read.(¥«±°ÿÿÿÿÿ
+gsquid:CommentedOutCodeLinef"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ
+asquid:CommentedOutCodeLine]"<This block of commented-out lines of code should be removed.(‹Ý†v
+[squid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ
+]squid:UselessImportCheck"4Remove this unused import 'java.net.DatagramSocket'.(¤¸äÍøÿÿÿÿ
+Msquid:S1751¦"5Remove this "break" statement or make it conditional.(›ûä·
+gsquid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(´Ý•þÿÿÿÿ
+Zsquid:UselessImportCheck"6Remove this unused import 'javax.annotation.Resource'.(î¾Ì—
+©%squid:RedundantThrowsDeclarationCheck""lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Ä¶èËþÿÿÿÿ8áÙ°Ðµ.
+Psquid:UselessImportCheck",Remove this unused import 'java.net.Socket'.(­‡àú
+Xsquid:UselessImportCheck
+"4Remove this unused import 'java.net.DatagramPacket'.(°í“Å
+bsquid:CommentedOutCodeLine["<This block of commented-out lines of code should be removed.(ƒ±ãÄ
+csquid:CommentedOutCodeLine‹"<This block of commented-out lines of code should be removed.(â½Ó¶
+hsquid:CommentedOutCodeLine”"<This block of commented-out lines of code should be removed.(ÔÂƒñøÿÿÿÿ
+hsquid:CommentedOutCodeLine‚"<This block of commented-out lines of code should be removed.(›Äúëûÿÿÿÿ
+csquid:UselessImportCheck":Remove this unused import 'java.util.concurrent.Callable'.(¾×¶îûÿÿÿÿ
+hsquid:CommentedOutCodeLine›"<This block of commented-out lines of code should be removed.(–§’•ûÿÿÿÿ
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(×›Îªüÿÿÿÿ
+bsquid:CommentedOutCodeLinec"<This block of commented-out lines of code should be removed.(â½Ó¶
+T
+squid:S106("9Replace this use of System.out or System.err by a logger.(‘’…«þÿÿÿÿ
+Wsquid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ
+squid:UselessImportCheck"TRemove this unnecessary import: same package classes are always implicitly imported.(¤ýƒÅ8˜¡ÍÔµ.
+?squid:S11486"#Use a logger to log this exception.(ðø¡üÿÿÿÿ
+£%squid:RedundantThrowsDeclarationCheck0"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Ù«½I8áÙ°Ðµ.
+gsquid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(›Äúëûÿÿÿÿ
+U
+squid:S106¥"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ
+Ssquid:UselessImportCheck"*Remove this unused import 'java.util.Map'.(¼è½Òþÿÿÿÿ
+?squid:S1148)"#Use a logger to log this exception.(ðø¡üÿÿÿÿ
+O
+squid:S1065"9Replace this use of System.out or System.err by a logger.(ùñÜ×
+Nsquid:S1135b"2Complete the task associated to this TODO comment.(ÕÌ®þÿÿÿÿ
+gsquid:S2674„"JCheck the return value of the "read" call to see how many bytes were read.(¥«±°ÿÿÿÿÿ
+Osquid:S1135Š"2Complete the task associated to this TODO comment.(ÕÌ®þÿÿÿÿ
+?squid:S1148d"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

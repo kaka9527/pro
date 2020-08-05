@@ -1,0 +1,47 @@
+
+osquid:CommentedOutCodeLineÍ"<This block of commented-out lines of code should be removed.(÷ŽÕ¬ÿÿÿÿÿ8²ÄÑí¸.
+Gsquid:S1148ê"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8™Ùí¸.
+W
+squid:S106¤"9Replace this use of System.out or System.err by a logger.(üã¸8šó¾í¸.
+osquid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(¬ºøÿÿÿÿ8šó¾í¸.
+jsquid:CommentedOutCodeLine…"<This block of commented-out lines of code should be removed.(’ þ–8šó¾í¸.
+Gsquid:S1148ÿ"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8šó¾í¸.
+Fsquid:S1148T"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8šó¾í¸.
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(€‡þ¨þÿÿÿÿ8÷‹¾í¸.
+Fsquid:S1148_"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8šó¾í¸.
+Osquid:S1068",Remove this unused "PASSWORD" private field.(‰²úÇþÿÿÿÿ8’†ëÌ·.
+Gsquid:S1148Ò"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ðÓÖí¸.
+osquid:CommentedOutCodeLineÝ"<This block of commented-out lines of code should be removed.(Å¶ú¥ÿÿÿÿÿ8Ò†ßí¸.
+Fsquid:S1148E"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8šó¾í¸.
+rsquid:UselessImportCheck"GRemove this unused import 'org.apache.activemq.jms.pool.PooledSession'.(­Êÿ¾8ì¿Î·.
+W
+squid:S106"9Replace this use of System.out or System.err by a logger.(€×…ó8®ˆ¡Ê·.
+Msquid:S2093l"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8šó¾í¸.
+jsquid:CommentedOutCodeLine¼"<This block of commented-out lines of code should be removed.(–óŸå8šó¾í¸.
+jsquid:CommentedOutCodeLine‘"<This block of commented-out lines of code should be removed.(â†¶ú8•¹Æí¸.
+Gsquid:S1148Á"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8šó¾í¸.
+Gsquid:S1604ø"(Make this anonymous inner class a lambda(ÉãÃ®8šó¾í¸.
+nsquid:S2674ƒ"JCheck the return value of the "read" call to see how many bytes were read.(ë¥áïøÿÿÿÿ8šó¾í¸.
+bsquid:S2147F"DCombine this catch with the one at line 68, which has the same body.(”ý¾8šó¾í¸.
+isquid:CommentedOutCodeLineÓ"<This block of commented-out lines of code should be removed.(Î¾¢'8«£Öí¸.
+Gsquid:S1148¨"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8šó¾í¸.
+dsquid:S2142^"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8šó¾í¸.
+V
+squid:S106Ž"9Replace this use of System.out or System.err by a logger.(ÙÉö8šó¾í¸.
+isquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(†¯«8šó¾í¸.
+osquid:CommentedOutCodeLineç"<This block of commented-out lines of code should be removed.(Š‹ãÂüÿÿÿÿ8‰ÓØí¸.
+hsquid:S3027"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(ƒàê:8šó¾í¸.
+osquid:CommentedOutCodeLineé"<This block of commented-out lines of code should be removed.(©Û«æùÿÿÿÿ8™Ùí¸.
+\
+squid:S106ý"9Replace this use of System.out or System.err by a logger.(ñ©Ó’üÿÿÿÿ8šó¾í¸.
+csquid:S3398Û"?Move this method into the anonymous class declared at line 198.(Áôèšúÿÿÿÿ8²ÄÑí¸.
+Gsquid:S1604Æ"(Make this anonymous inner class a lambda(ûºÔì8²ÄÑí¸.
+Xsquid:S3985ï"4Remove this unused private "CallBackListener" class.(òÙ»Ôÿÿÿÿÿ8Ä€áí¸.
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÝÏ©Ì8†àÔí¸.
+Gsquid:S1148®"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8šó¾í¸.
+\
+squid:S106á"9Replace this use of System.out or System.err by a logger.(èñö¹úÿÿÿÿ8ºû×í¸.
+Qsquid:S1068!".Remove this unused "BROKEN_URL" private field.(“€Ü·ýÿÿÿÿ8šó¾í¸.
+Fsquid:S1148G"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8šó¾í¸.
+Osquid:S1068",Remove this unused "USERNAME" private field.(Ö‡ýöûÿÿÿÿ8’†ëÌ·.
+nsquid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(Ð¹¿üûÿÿÿÿ8šó¾í¸.

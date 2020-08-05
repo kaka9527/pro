@@ -1,0 +1,14 @@
+
+@squid:S1643Å"Use a StringBuilder instead.(Ã‚üüÿÿÿÿ8í¿Şó·.
+Fsquid:S1148f"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8€Áñò·.
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(íÇßûúÿÿÿÿ8«Íİõ·.
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(âµöûøÿÿÿÿ8«Íİõ·.
+nsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(¦Œ…Îúÿÿÿÿ8ÆÇ¾õ·.
+?squid:S1643`"Use a StringBuilder instead.(Ë¬àúÿÿÿÿ8€Áñò·.
+@squid:S1643£"Use a StringBuilder instead.(Ã‚üüÿÿÿÿ8í¿Şó·.
+]squid:S1118":Add a private constructor to hide the implicit public one.(óûƒ·ùÿÿÿÿ8úóÜò·.
+bsquid:UnusedPrivateMethodm"1Remove this unused private "makeChecksum" method.(©÷Áùÿÿÿÿ8Íµ¿õ·.
+isquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(´Ûÿü8Íµ¿õ·.
+isquid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(ğÌ¸À8ó‹„õ·.
+~squid:S1149‘"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰8í¿Şó·.
+~squid:S1149±"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰8í¿Şó·.

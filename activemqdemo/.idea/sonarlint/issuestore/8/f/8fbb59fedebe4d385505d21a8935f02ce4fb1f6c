@@ -1,0 +1,19 @@
+
+isquid:CommentedOutCodeLine}"<This block of commented-out lines of code should be removed.(ÄÿÔ­8ÖÄÓÕµ.
+}squid:S1488|"_Immediately return this expression instead of assigning it to the temporary variable "whatday".(¹¼þ8ÖÄÓÕµ.
+bsquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(Ÿù©²
+O
+squid:S106E"9Replace this use of System.out or System.err by a logger.(Žâ®Ã
+3squid:S1643K"Use a StringBuilder instead.(ù†ß¶
+@squid:S1148Ë"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+O
+squid:S106J"9Replace this use of System.out or System.err by a logger.(Æ·ÅÝ
+T
+squid:S106G"9Replace this use of System.out or System.err by a logger.(”»Œ§øÿÿÿÿ
+4squid:S1643ž"Use a StringBuilder instead.(£Ð“ç
+Qsquid:S1118":Add a private constructor to hide the implicit public one.(›™­©
+Gsquid:S1172z")Remove this unused method parameter "dt".(šôøø8ÖÄÓÕµ.
+3squid:S1643)"Use a StringBuilder instead.(ôñ€
+vsquid:S1149i"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(®ß£•
+|squid:S1149¯"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ê¶ïÄýÿÿÿÿ
+ssquid:S1488]"\Immediately return this expression instead of assigning it to the temporary variable "str2".(“ù‘Ô

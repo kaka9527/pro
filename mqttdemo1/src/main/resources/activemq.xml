@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<broker xmlns="http://activemq.apache.org/schema/core" brokerName="ckbroker" useJmx="true">
+    <persistenceAdapter>
+        <kahaDB directory="./kahadb"/>
+    </persistenceAdapter>
+
+    <transportConnectors>
+        <transportConnector name="openwire" uri="tcp://0.0.0.0:61616"/>
+    </transportConnectors>
+</broker>

@@ -1,0 +1,37 @@
+
+nsquid:CommentedOutCodeLine}"<This block of commented-out lines of code should be removed.(È‡Ëâøÿÿÿÿ8âİû¸.
+Gsquid:S14816")Remove this unused "msg1" local variable.(ö“¦·8Ÿ¡…·.
+Vsquid:S18546"8Remove this useless assignment to local variable "msg1".(ö“¦·8Ÿ¡…·.
+zsquid:S1488~"\Immediately return this expression instead of assigning it to the temporary variable "bool".(ãÿÄ…8ĞŸßû¸.
+`squid:S3457½"AFormat specifiers should be used instead of string concatenation.(ù„Óß8À‚ßú¸.
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8ĞŸßû¸.
+Csquid:S2629£"$Invoke method(s) only conditionally.(è°È€8À‚ßú¸.
+Vsquid:S2629½"7Use the built-in formatting to construct this argument.(ù„Óß8À‚ßú¸.
+Rsquid:S1481;"/Remove this unused "jsonString" local variable.(»Ò™üÿÿÿÿ8ÀÚ¹Ÿ·.
+gsquid:S2583Z"DChange this condition so that it does not always evaluate to "false"(¸å‹Ëÿÿÿÿÿ8ĞŸßû¸.
+Ssquid:S1068%"5Remove this unused "UPLOAD_TOPIC_NAME" private field.(¬¥÷±8À‚ßú¸.
+Tsquid:S2629U"7Use the built-in formatting to construct this argument.(¹Òñ58À‚ßú¸.
+Vsquid:S1481p"3Remove this unused "messageCreator" local variable.(·ùÜşûÿÿÿÿ8âİû¸.
+asquid:S1854;">Remove this useless assignment to local variable "jsonString".(»Ò™üÿÿÿÿ8”·¹Ÿ·.
+[
+squid:S106G"9Replace this use of System.out or System.err by a logger.(‡”‰¾şÿÿÿÿ8Öü©­µ.
+:squid:S3626§"Remove this redundant jump.(ÉŠ©ƒ8Åœİú¸.
+gsquid:S2583_"DChange this condition so that it does not always evaluate to "false"(¸å‹Ëÿÿÿÿÿ8ĞŸßû¸.
+esquid:S3457·"AFormat specifiers should be used instead of string concatenation.(©ÅİÊúÿÿÿÿ8À‚ßú¸.
+_squid:S3457O"AFormat specifiers should be used instead of string concatenation.(É”íè8À‚ßú¸.
+Msquid:S1068-"/Remove this unused "PACKET_SIZE" private field.(¶¥ã 8À‚ßú¸.
+Osquid:S1068)"1Remove this unused "BIN_FILE_NAME" private field.(Ü‚‚‡8À‚ßú¸.
+Nsquid:S1172o"+Remove this unused method parameter "type".(éëõ÷ùÿÿÿÿ8¿°Şû¸.
+~squid:UselessImportCheck"NRemove this unused import 'org.springframework.jms.core.JmsMessagingTemplate'.(œñŠëùÿÿÿÿ8°Ÿ …·.
+msquid:S4201²"IRemove this unnecessary null check; "instanceof" returns false for nulls.(³°Õşÿÿÿÿ8Åœİú¸.
+[squid:S2629·"7Use the built-in formatting to construct this argument.(©ÅİÊúÿÿÿÿ8À‚ßú¸.
+hsquid:UselessImportCheck"8Remove this unused import 'com.tin.mqtt.UploadReceiver'.(İê¾õøÿÿÿÿ8×ßú¸.
+qsquid:ModifiersOrderCheck-"EReorder the modifiers to comply with the Java Language Specification.(¶¥ã 8À‚ßú¸.
+isquid:CommentedOutCodeLineS"<This block of commented-out lines of code should be removed.(ïÓñ±8µ„ìú¸.
+dsquid:UselessImportCheck"4Remove this unused import 'com.tin.mqtt.MqttConfig'.(ÔÄºğşÿÿÿÿ8Úğôü¸.
+^squid:S3457U"AFormat specifiers should be used instead of string concatenation.(¹Òñ58À‚ßú¸.
+Usquid:S2629O"7Use the built-in formatting to construct this argument.(É”íè8À‚ßú¸.
+esquid:S1854p"BRemove this useless assignment to local variable "messageCreator".(·ùÜşûÿÿÿÿ8âİû¸.
+[
+squid:S1064"9Replace this use of System.out or System.err by a logger.(Ğèá·úÿÿÿÿ8ó•©­µ.
+_squid:UselessImportCheck"5Remove this unused import 'com.tin.mqtt.MqttGateway'.(ôŠÆG8ô³—“º.

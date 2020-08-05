@@ -1,0 +1,17 @@
+
+hsquid:S2259x"EA "NullPointerException" could be thrown; "binData" is nullable here.(ÿßÚ…ÿÿÿÿÿ8´­ø¸.
+tsquid:S1149v"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(Í«¥8Ñôê÷¸.
+squid:S1319u"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ùø…şÿÿÿÿ8ßûùö¸.
+Ksquid:S1481V"(Remove this unused "msg" local variable.(‰œòùÿÿÿÿ8É¨şö¸.
+dsquid:S3457O"AFormat specifiers should be used instead of string concatenation.(Ÿ¿¾¢üÿÿÿÿ8ß©óö¸.
+Msquid:S2093C"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8ß©óö¸.
+squid:S14884"^Immediately return this expression instead of assigning it to the temporary variable "pduMsg".(§ÍÕŠÿÿÿÿÿ8òñÈÔ·.
+ysquid:S1149?"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(ö¬¾Şüÿÿÿÿ8éØôö¸.
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¶¥ã 8­–òú·.
+ysquid:S1149="VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(’²ŞØúÿÿÿÿ8Ûô€÷¸.
+usquid:S3776="RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(’²ŞØúÿÿÿÿ8ß©óö¸.
+_squid:S3457("AFormat specifiers should be used instead of string concatenation.(¾´‰8•Ø´Ò·.
+’squid:S1319="oThe return type of this method should be an interface such as "Map" rather than the implementation "Hashtable".(’²ŞØúÿÿÿÿ8Ûô€÷¸.
+Usquid:S2629("7Use the built-in formatting to construct this argument.(¾´‰8•Ø´Ò·.
+Xsquid:S1118":Add a private constructor to hide the implicit public one.(Óû ™8¶‹„û·.
+Zsquid:S2629O"7Use the built-in formatting to construct this argument.(Ÿ¿¾¢üÿÿÿÿ8ß©óö¸.

@@ -1,0 +1,31 @@
+
+jsquid:S00112*"FDefine and throw a dedicated exception instead of using a generic one.(–ÛéÏşÿÿÿÿ8ñİË·.
+psquid:HiddenFieldCheck_"BRename "connectionPool" which hides the field declared at line 27.(ì¾ãûÿÿÿÿ8ñİË·.
+esquid:S00112\"FDefine and throw a dedicated exception instead of using a generic one.(´Ğ‹8ñİË·.
+Ssquid:S1068"0Remove this unused "sessionPools" private field.(ô²°‰úÿÿÿÿ8÷™ÓÎ·.
+jsquid:S00112="FDefine and throw a dedicated exception instead of using a generic one.(ÿ£¶¹üÿÿÿÿ8ñİË·.
+Gsquid:S1148ƒ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Å¥Ì·.
+osquid:CommentedOutCodeLineÖ"<This block of commented-out lines of code should be removed.(â¦é¯ùÿÿÿÿ8´´ìË·.
+dsquid:S2259"FA "NullPointerException" could be thrown; "connPool" is nullable here.(¿ÜŠz8‹˜éÌ·.
+asquid:S1155^">Use isEmpty() to check whether the collection is empty or not.(Ü¢¥êûÿÿÿÿ8ÖØİË·.
+jsquid:CommentedOutCodeLine¯"<This block of commented-out lines of code should be removed.(ò‹ÿ€8´´ìË·.
+osquid:CommentedOutCodeLineÉ"<This block of commented-out lines of code should be removed.(ì‚†Ñúÿÿÿÿ8´´ìË·.
+osquid:CommentedOutCodeLine·"<This block of commented-out lines of code should be removed.(ĞÇ™ùÿÿÿÿ8´´ìË·.
+jsquid:CommentedOutCodeLineî"<This block of commented-out lines of code should be removed.(õœªœ8´´ìË·.
+isquid:CommentedOutCodeLinej"<This block of commented-out lines of code should be removed.(Œ¨ó®8Å¼íË·.
+osquid:CommentedOutCodeLine½"<This block of commented-out lines of code should be removed.(´æòşÿÿÿÿ8´´ìË·.
+jsquid:S00112v"FDefine and throw a dedicated exception instead of using a generic one.(—ª‹úÿÿÿÿ8ñİË·.
+jsquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(Ù˜ŠŒ8´´ìË·.
+|squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ô²°‰úÿÿÿÿ8è¾ÄÎ·.
+jsquid:CommentedOutCodeLineŠ"<This block of commented-out lines of code should be removed.(Ğ¸¾à8´´ìË·.
+osquid:CommentedOutCodeLine‹"<This block of commented-out lines of code should be removed.(©µ˜ÿÿÿÿÿ8´´ìË·.
+jsquid:CommentedOutCodeLineá"<This block of commented-out lines of code should be removed.(Ñõºÿ8´´ìË·.
+Vsquid:S1068"8Remove this unused "MAX_CONSUMER_SESSION" private field.(÷ƒÁ“8´´ìË·.
+hsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(šÆ28÷™ÓÎ·.
+osquid:CommentedOutCodeLine“"<This block of commented-out lines of code should be removed.(Â˜³¥üÿÿÿÿ8´´ìË·.
+|squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ş²¸Âøÿÿÿÿ8ñİË·.
+osquid:CommentedOutCodeLine©"<This block of commented-out lines of code should be removed.(ß¨ŒÒüÿÿÿÿ8´´ìË·.
+osquid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(´æòşÿÿÿÿ8´´ìË·.
+[squid:S1068"8Remove this unused "MAX_PRODUCER_SESSION" private field.(ÅÏ™™şÿÿÿÿ8´´ìË·.
+osquid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(ãÊùÿÿÿÿ8´´ìË·.
+osquid:CommentedOutCodeLineñ"<This block of commented-out lines of code should be removed.(ºçªıÿÿÿÿ8´´ìË·.

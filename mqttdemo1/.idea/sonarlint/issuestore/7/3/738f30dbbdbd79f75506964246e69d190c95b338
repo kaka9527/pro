@@ -1,0 +1,23 @@
+
+esquid:S3457÷"AFormat specifiers should be used instead of string concatenation.(¡«šÿøÿÿÿÿ8ùŠøö¹.
+`squid:S3457×"AFormat specifiers should be used instead of string concatenation.(¥”†ï8‡È¢÷¹.
+Asquid:S1148¤"#Use a logger to log this exception.(ã¦“8çôö¹.
+[squid:S2629—"7Use the built-in formatting to construct this argument.(½†¯›ÿÿÿÿÿ8Óßôö¹.
+Ksquid:S3077".Remove the "volatile" keyword from this field.(Öñò|8Ä¼ğö¹.
+msquid:S2095p"OUse try-with-resources or close this "MemoryPersistence" in a "finally" clause.(ı¢½Á8Ä¼ğö¹.
+Hsquid:S2629Ê"$Invoke method(s) only conditionally.(µÕ„Àúÿÿÿÿ8³¼õö¹.
+Gsquid:S1148†"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ä¼ğö¹.
+esquid:S3457ü"AFormat specifiers should be used instead of string concatenation.(ÊäÀ½ûÿÿÿÿ8ãÚøö¹.
+`squid:S3457…"AFormat specifiers should be used instead of string concatenation.(¢Î8ìø®÷¹.
+Gsquid:S1148İ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8çôö¹.
+Gsquid:S1148‰"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8çôö¹.
+esquid:S3457—"AFormat specifiers should be used instead of string concatenation.(½†¯›ÿÿÿÿÿ8Óßôö¹.
+esquid:S3457°"AFormat specifiers should be used instead of string concatenation.(Æà…şÿÿÿÿ8¬œõö¹.
+`squid:S3457Ø"AFormat specifiers should be used instead of string concatenation.(õìœŸ8‡È¢÷¹.
+_squid:S3457Ù"AFormat specifiers should be used instead of string concatenation.(ûı¼~8‡È¢÷¹.
+gsquid:S2259Ê"CA "NullPointerException" could be thrown; "token" is nullable here.(µÕ„Àúÿÿÿÿ8øĞ‡ø¹.
+ksquid:S2259@"HA "NullPointerException" could be thrown; "mqttClient" is nullable here.(›Èîèúÿÿÿÿ8Ä¼ğö¹.
+Fsquid:S1148D"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ä¼ğö¹.
+[squid:S2629÷"7Use the built-in formatting to construct this argument.(¡«šÿøÿÿÿÿ8ùŠøö¹.
+€squid:S2629°"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(Æà…şÿÿÿÿ8¬œõö¹.
+Gsquid:S1148Ç"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8çôö¹.

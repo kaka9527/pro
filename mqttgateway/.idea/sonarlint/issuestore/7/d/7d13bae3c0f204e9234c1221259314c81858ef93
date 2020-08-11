@@ -1,0 +1,7 @@
+
+\squid:S18548">Remove this useless assignment to local variable "deviceCode".(Ü®áú8Ò“¦”¼.
+_squid:S3457"AFormat specifiers should be used instead of string concatenation.(æÛ†è8ÖŒéŠ¼.
+Usquid:S2629"7Use the built-in formatting to construct this argument.(æÛ†è8ÖŒéŠ¼.
+Bsquid:S2629+"$Invoke method(s) only conditionally.(˜÷´Ù8Øú“é».
+Msquid:S14818"/Remove this unused "deviceCode" local variable.(Ü®áú8Ò“¦”¼.
+¸%squid:RedundantThrowsDeclarationCheck)"{Remove the declaration of thrown exception 'org.springframework.messaging.MessagingException' which is a runtime exception.(ÉðŒ‘ýÿÿÿÿ8Øú“é».

@@ -1,0 +1,5 @@
+
+_squid:S3457 "AFormat specifiers should be used instead of string concatenation.(æÛ†è8Ó´ãŠ¼.
+±%squid:RedundantThrowsDeclarationCheck,"{Remove the declaration of thrown exception 'org.springframework.messaging.MessagingException' which is a runtime exception.(ÉðŒ‘ýÿÿÿÿ
+nsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(œ®üïúÿÿÿÿ8½ÕÃ“¼.
+Usquid:S2629 "7Use the built-in formatting to construct this argument.(æÛ†è8Ó´ãŠ¼.

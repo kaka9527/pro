@@ -1,0 +1,9 @@
+
+dsquid:S3457Z"AFormat specifiers should be used instead of string concatenation.(Ð³£Ãøÿÿÿÿ8è³¶¾¼.
+_squid:S3457:"AFormat specifiers should be used instead of string concatenation.(ù„Óß8øíÔ¾¼.
+Msquid:S2093N"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8™ïµ¾¼.
+Vsquid:S3416"8Update this logger to use "ResponseMessageThread.class".(¥‰éÑ8ˆ¨®´¼.
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¶¥ã 8£€´´¼.
+Usquid:S2629:"7Use the built-in formatting to construct this argument.(ù„Óß8øíÔ¾¼.
+Zsquid:S2629Z"7Use the built-in formatting to construct this argument.(Ð³£Ãøÿÿÿÿ8è³¶¾¼.
+usquid:S3776G"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(€“‡²þÿÿÿÿ8™ïµ¾¼.

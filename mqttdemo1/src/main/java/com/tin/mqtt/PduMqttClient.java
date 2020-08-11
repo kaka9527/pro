@@ -1,50 +1,115 @@
 package com.tin.mqtt;
+//
+import org.eclipse.paho.client.mqttv3.*;
+import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import org.apache.activemq.ActiveMQConnection;
-import org.apache.activemq.ActiveMQConnectionFactory;
-import org.apache.activemq.ActiveMQSession;
-import org.apache.activemq.command.ActiveMQTopic;
+public class PduMQTTClient {
+    private static final Logger logger = LoggerFactory.getLogger(PduMQTTClient.class);
 
-import javax.jms.*;
+    public static String MQTT_HOST = "tcp://127.0.0.1:1883";
+    public static String MQTT_CLIENTID = "";
+    public static String MQTT_USERNAME = "";
+    public static String MQTT_PASSWORD = "";
+    public static int MQTT_TIMEOUT = 20;
+    public static int MQTT_KEEPALIVE = 30;
 
-public class PduMqttClient {
-    private static final String url = "tcp://192.168.10.80:1883";
+    private MqttClient client;
+    private static volatile PduMQTTClient mqttClient = null;
 
-    private static final String queueName = "queue.chuangkou.updateResult";
-
-
-    public static void main(String[] args) {
-        ActiveMQConnectionFactory connectionFactory = null;
-        ActiveMQConnection connection = null;
-        try {
-            // 1、创建连接工厂
-            connectionFactory = new ActiveMQConnectionFactory(url);
-
-            // 2、创建连接对象
-            connection = (ActiveMQConnection)connectionFactory.createConnection();
-            // 3、启动连接
-            connection.start();
-            // 4、创建会话
-            ActiveMQSession session = (ActiveMQSession)connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-
-            ActiveMQTopic topic = (ActiveMQTopic)session.createTopic(queueName);
-
-            MessageConsumer consumer = session.createConsumer(topic, " ClientID='ckMqttClientId_result'");
-            Message message = consumer.receive();
-            System.out.println("msg==="+message.toString());
-
-        } catch (JMSException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }finally {
-            try {
-                if(null != connection){
-                    connection.close();
+    public static PduMQTTClient getInstance() {
+        if (mqttClient == null) {
+            synchronized (PduMQTTClient.class) {
+                if (mqttClient == null) {
+                    mqttClient = new PduMQTTClient();
                 }
-            } catch (JMSException e) {
+            }
+        }
+        return mqttClient;
+    }
+
+    private PduMQTTClient() {
+        logger.info("Connect MQTT: " + this);
+        connect();
+    }
+
+    private void connect() {
+        try {
+            client = new MqttClient(MQTT_HOST, MQTT_CLIENTID, new MemoryPersistence());
+            MqttConnectOptions option = new MqttConnectOptions();
+            option.setCleanSession(true);
+            //option.setUserName(MQTT_USERNAME);
+            //option.setPassword(MQTT_PASSWORD.toCharArray());
+            option.setConnectionTimeout(MQTT_TIMEOUT);
+            option.setKeepAliveInterval(MQTT_KEEPALIVE);
+            option.setAutomaticReconnect(true);
+            try {
+                client.setCallback(new PduMQTTCallback());
+                client.connect(option);
+            } catch (Exception e) {
                 e.printStackTrace();
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 发布主题，用于通知<br>
+     * 默认qos为1 非持久化
+     * @param topic
+     * @param data
+     */
+    public void publish(String topic, String data) {
+        publish(topic, data, 1, false);
+    }
+
+    /**
+     * 发布
+     * @param topic
+     * @param data
+     * @param qos
+     * @param retained
+     */
+    public void publish(String topic, String data, int qos, boolean retained) {
+        MqttMessage message = new MqttMessage();
+        message.setQos(qos);
+        message.setRetained(retained);
+        message.setPayload(data.getBytes());
+        MqttTopic mqttTopic = client.getTopic(topic);
+        if (null == mqttTopic) {
+            logger.error("Topic Not Exist");
+        }
+        MqttDeliveryToken token;
+        try {
+            token = mqttTopic.publish(message);
+            token.waitForCompletion();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 订阅某个主题 qos默认为1
+     *
+     * @param topic
+     */
+    public void subscribe(String topic) {
+        subscribe(topic, 1);
+    }
+
+    /**
+     * 订阅某个主题
+     *
+     * @param topic
+     * @param qos
+     */
+    public void subscribe(String topic, int qos) {
+        try {
+            client.subscribe(topic, qos);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

@@ -118,7 +118,7 @@
             <!-- DOS protection, limit concurrent connections to 1000 and frame size to 100MB -->
             <transportConnector name="openwire" uri="tcp://0.0.0.0:61616?wireFormat.maxInactivityDuration=0"/>
             <!--&amp;transport.subscriptionStrategy=mqtt-virtual-topic-subscriptions-->
-            <transportConnector name="mqtt+nio" uri="mqtt+nio://0.0.0.0:1883?transport.defaultKeepAlive=30000&amp;maximumConnections=30000&amp;wireFormat.maxFrameSize=204857600" />
+            <transportConnector name="mqtt+nio" uri="mqtt+nio://0.0.0.0:8899?transport.defaultKeepAlive=30000&amp;maximumConnections=10000&amp;wireFormat.maxFrameSize=204857600" />
         </transportConnectors>
 
         <!--<networkConnectors>

@@ -1,64 +1,29 @@
 package com.tin.mqtt;
 
-public abstract class PduMqttCallback {
-    /**
-     * 订阅成功
-     *
-     * @param mqttTopic
-     */
-    public void subscribedSuccess(String[] mqttTopic) {
+import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
+import org.eclipse.paho.client.mqttv3.MqttCallback;
+import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+public class PduMQTTCallback implements MqttCallback {
+
+    private static final Logger logger = LoggerFactory.getLogger(PduMQTTCallback.class);
+
+    @Override
+    public void connectionLost(Throwable cause) {
+        logger.info("断开连接，建议重连" + this);
+        //断开连接，建议重连
     }
 
-    /**
-     * 订阅失败
-     *
-     * @param message
-     */
-    public void subscribedFail(String message) {
-
+    @Override
+    public void deliveryComplete(IMqttDeliveryToken token) {
+        logger.info(token.isComplete() + "");
     }
 
-    /**
-     * 发送成功
-     * @param message
-     */
-    public void deliveryComplete(String message) {
-
+    @Override
+    public void messageArrived(String topic, MqttMessage message) throws Exception {
+        logger.info("Topic: " + topic);
+        logger.info("Message: " + new String(message.getPayload()));
     }
-
-    /**
-     * 接收的数据
-     *
-     * @param topic
-     * @param message
-     */
-    public abstract void receiveMessage(String topic, String message);
-
-
-    /**
-     * 连接成功
-     */
-    public void connectSuccess(boolean reconnect) {
-
-    }
-
-    /**
-     * 连接失败
-     *
-     * @param message
-     */
-    public void connectFail(String message) {
-
-    }
-
-    /**
-     * 断开连接
-     *
-     * @param message
-     */
-    public void connectLost(String message) {
-
-    }
-
 }

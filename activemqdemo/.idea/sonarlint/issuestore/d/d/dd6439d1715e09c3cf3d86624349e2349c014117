@@ -1,8 +1,8 @@
 
 Zsquid:S2629"7Use the built-in formatting to construct this argument.(ôÚ³°øÿÿÿÿ8É‘¿˜».
-dsquid:S3457+"AFormat specifiers should be used instead of string concatenation.(˜ßþ±ÿÿÿÿÿ8É‘¿˜».
-_squid:S3457*"AFormat specifiers should be used instead of string concatenation.(ÎŠä“8É‘¿˜».
-dsquid:S3027"FPut single-quotes around '.' to use the faster "indexOf(char)" method.(®¬Ó…8É‘¿˜».
 u
 squid:S135""YReduce the total number of break and continue statements in this loop to use at most one.(ð¯ð]8É‘¿˜».
+dsquid:S3027"FPut single-quotes around '.' to use the faster "indexOf(char)" method.(®¬Ó…8É‘¿˜».
 dsquid:S3457"AFormat specifiers should be used instead of string concatenation.(ôÚ³°øÿÿÿÿ8É‘¿˜».
+_squid:S3457*"AFormat specifiers should be used instead of string concatenation.(ÎŠä“8É‘¿˜».
+dsquid:S3457+"AFormat specifiers should be used instead of string concatenation.(˜ßþ±ÿÿÿÿÿ8É‘¿˜».

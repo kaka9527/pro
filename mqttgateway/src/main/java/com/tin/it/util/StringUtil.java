@@ -40,19 +40,12 @@ public class StringUtil {
     }
 
     /**
-     * @Author:xulei
      * @Description:解析回传的报文
-     * @Date:2019-02-28
      */
-//    public static String actionMessage(String result,String messageID,Pdu pdu) {
     public static String actionMessage(String messageID) {
         String res = "aaaab2a3120205051b2e0925000000010015b3007bc00c0001000000000000000000000100000000000000000000000000000000000000000000000000505555";
         String[] str = new String[37];
         Byte ii = 123;
-        int s = ii.intValue();
-//        System.out.println(s);
-//        System.out.println(new Byte("12").intValue());
-//        System.out.println(Integer.valueOf(res.substring(0, 2).toString(), 16));
 
         String actiontype = null;
         try {
@@ -102,11 +95,6 @@ public class StringUtil {
             String ip = "";
             actiontype = "";
 
-            for (int rss = 0; rss <= 36; rss++) {
-//                System.out.println(str[rss]);
-            }
-//            System.out.println("str[10]==" + str[10].toString());
-
             //根据操作类型封装相应的返回值，用map返回
             //str[3] = "a1";//1表示 自动对时&网络配置信息上报（0xa1）
             Map map = new HashMap<String, String>();
@@ -146,11 +134,6 @@ public class StringUtil {
                 acstate = str[11].toString();
                 mechineID = str[13].toString() + str[14].toString() + str[15].toString();
                 ip = str[16].toString();
-
-                //判断设备ID、Ip地址是否一致 以及操作是否成功
-                //            if(acstate.equals("1") && mechineID.equals(pdu.getMachineid()) && ip.equals(pdu.getIp())){
-                //                actiontype = "1";
-                //            }
             }
         } catch (NumberFormatException e) {
             e.printStackTrace();
@@ -246,17 +229,6 @@ public class StringUtil {
             }
             // 直接找到该整数对应的16进制，这里不用switch来做
             sb.append(hexStr[num]);
-            // 这里如果要用switch case来做，大概是这个样子
-            // switch(num){
-            // case 0:
-            // sb.append('0');
-            // break;
-            // case 1:
-            // ...
-            // case 15:
-            // sb.append('F');
-            // break;
-            // }
         }
         return sb.toString();
     }
@@ -382,7 +354,6 @@ public class StringUtil {
 
 
     /**
-     * @Author:xulei
      * @Description:字符串转十六进制字符串
      * @Date:
      */

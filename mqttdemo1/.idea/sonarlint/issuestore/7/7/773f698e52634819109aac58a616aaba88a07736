@@ -1,21 +1,23 @@
 
-Fsquid:S1148@"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8‚ŽÔ„µ.
-isquid:CommentedOutCodeLine["<This block of commented-out lines of code should be removed.(¬–ýï8ö×Ìì¹.
-Fsquid:S1148g"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8‚ŽÔ„µ.
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ä–õÚúÿÿÿÿ8Žÿá¶».
-Ysquid:S2696>"6Make the enclosing method "static" or remove this set.(­ˆŸ¼ýÿÿÿÿ8ýÐ¼·».
-isquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(Ì÷Þ¤8ä€¯ó¹.
-Zsquid:UnusedPrivateMethodk".Remove this unused private "onDestory" method.(»‚ØÛ8Ï“ˆ¥·.
-Fsquid:S1148q"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8±¥ù¤·.
-ysquid:S2068"V'passWord' detected in this expression, review this potentially hard-coded credential.(¶«”øÿÿÿÿ8è‹Ø„µ.
-Psquid:S1172T"-Remove this unused method parameter "clieId".(Ó­Ç§ùÿÿÿÿ8ÍüÌì¹.
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ù½¥øÿÿÿÿ8–œ‰Ä».
-Msquid:EmptyStatementUsageCheck`"Remove this empty statement.(üÌóú8õ×¢º».
-jsquid:S00112T"FDefine and throw a dedicated exception instead of using a generic one.(Ó­Ç§ùÿÿÿÿ8‚ŽÔ„µ.
-xsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ìÞ£8‚ŽÔ„µ.
-nsquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(úÿ„Šýÿÿÿÿ8Žÿá¶».
-é%squid:RedundantThrowsDeclarationCheckK"«Remove the declaration of thrown exception 'org.eclipse.paho.client.mqttv3.MqttPersistenceException' which is a subclass of 'org.eclipse.paho.client.mqttv3.MqttException'.(‰þ×‚üÿÿÿÿ8ÅÇÙ„µ.
-Tsquid:S2696`"6Make the enclosing method "static" or remove this set.(üÌóú8ÕüŸº».
-nsquid:CommentedOutCodeLineU"<This block of commented-out lines of code should be removed.(ÓËÎðýÿÿÿÿ8ï˜ñ”º.
+Rsquid:EmptyStatementUsageCheckg"Remove this empty statement.(“‡àÕùÿÿÿÿ8õ×¢º».
+isquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(Ì÷Þ¤8ä€¯ó¹.
+nsquid:CommentedOutCodeLinef"<This block of commented-out lines of code should be removed.(ÐÔªþÿÿÿÿ8ò©¸½.
+nsquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(Î‰‘¯ýÿÿÿÿ8ù…”¼.
+Fsquid:S1148y"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8±¥ù¤·.
+xsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ìÞ£8‚ŽÔ„µ.
+é%squid:RedundantThrowsDeclarationCheckR"«Remove the declaration of thrown exception 'org.eclipse.paho.client.mqttv3.MqttPersistenceException' which is a subclass of 'org.eclipse.paho.client.mqttv3.MqttException'.(‰þ×‚üÿÿÿÿ8ÅÇÙ„µ.
+Ysquid:S2696E"6Make the enclosing method "static" or remove this set.(­ˆŸ¼ýÿÿÿÿ8ýÐ¼·».
+Ysquid:S2696g"6Make the enclosing method "static" or remove this set.(“‡àÕùÿÿÿÿ8ÕüŸº».
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ëýàÇøÿÿÿÿ8ƒÑ¥•¼.
+isquid:CommentedOutCodeLineb"<This block of commented-out lines of code should be removed.(¬–ýï8ö×Ìì¹.
+jsquid:S00112["FDefine and throw a dedicated exception instead of using a generic one.(Ó­Ç§ùÿÿÿÿ8‚ŽÔ„µ.
+nsquid:CommentedOutCodeLinej"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ò©¸½.
+Fsquid:S1148n"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8‚ŽÔ„µ.
+ysquid:S2068"V'passWord' detected in this expression, review this potentially hard-coded credential.(¶«”øÿÿÿÿ8è‹Ø„µ.
+Fsquid:S1148G"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8‚ŽÔ„µ.
 [
-squid:S106O"9Replace this use of System.out or System.err by a logger.(Ž³¼ôþÿÿÿÿ8‚ŽÔ„µ.
+squid:S106V"9Replace this use of System.out or System.err by a logger.(Ž³¼ôþÿÿÿÿ8‚ŽÔ„µ.
+nsquid:CommentedOutCodeLinel"<This block of commented-out lines of code should be removed.(À«ªþøÿÿÿÿ8‡ë¶•¼.
+nsquid:CommentedOutCodeLine\"<This block of commented-out lines of code should be removed.(ÓËÎðýÿÿÿÿ8ï˜ñ”º.
+Psquid:S1172["-Remove this unused method parameter "clieId".(Ó­Ç§ùÿÿÿÿ8ÍüÌì¹.
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‚¢«îûÿÿÿÿ8Öï›é».

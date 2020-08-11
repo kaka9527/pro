@@ -1,12 +1,15 @@
 
-~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Òó‰µøÿÿÿÿ8í§›÷¶.
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ó»‹£8í§›÷¶.
 qsquid:UselessImportCheck"FRemove this unused import 'org.apache.activemq.command.ActiveMQQueue'.(Î¤¾ç8í§›÷¶.
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ó»‹£8í§›÷¶.
+Fsquid:S11487"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8í§›÷¶.
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ó´œãøÿÿÿÿ8‚¬±½.
 wsquid:UselessImportCheck"LRemove this unused import 'org.apache.activemq.command.ActiveMQDestination'.(þ‡£î8Ô˜™¢·.
-bsquid:S21475"DCombine this catch with the one at line 51, which has the same body.(”ý¾8í§›÷¶.
-Fsquid:S1148="#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8£Ñƒ¤·.
 ssquid:UselessImportCheck"HRemove this unused import 'org.apache.activemq.ActiveMQMessageConsumer'.(ÛÚ¤8·›³Ì¹.
-nsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(˜ùûÇýÿÿÿÿ8Ö©•¹».
 Qsquid:S1481'".Remove this unused "publisher" local variable.(²íáÝþÿÿÿÿ8Ö©•¹».
-Fsquid:S11486"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8í§›÷¶.
-Fsquid:S11484"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8í§›÷¶.
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Òó‰µøÿÿÿÿ8í§›÷¶.
+bsquid:S21478"DCombine this catch with the one at line 54, which has the same body.(”ý¾8í§›÷¶.
+Tsquid:S1481)"1Remove this unused "bytesMessage" local variable.(è¸ÒŒÿÿÿÿÿ8ýáË±½.
+Fsquid:S11489"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8í§›÷¶.
+nsquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(˜ùûÇýÿÿÿÿ8Ö©•¹».
+nsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(–ƒ°®ûÿÿÿÿ8€ÿ¬±½.
+Fsquid:S1148@"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8£Ñƒ¤·.

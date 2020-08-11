@@ -1,10 +1,11 @@
 
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¦ü‹Îýÿÿÿÿ8†ìÉ’º.
-bsquid:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(éâëŸ8ú÷½’º.
-bsquid:UselessImportCheck"2Remove this unused import 'java.net.ServerSocket'.(ÐúÙžÿÿÿÿÿ8À¸¼’º.
 nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡¶·ãûÿÿÿÿ8é¢É’º.
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ìú¯ä8†ìÉ’º.
-bsquid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8À¸¼’º.
-^squid:UselessImportCheck".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8À¸¼’º.
+bsquid:UselessImportCheck"2Remove this unused import 'java.net.ServerSocket'.(ÐúÙžÿÿÿÿÿ8À¸¼’º.
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¦ü‹Îýÿÿÿÿ8†ìÉ’º.
+bsquid:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(±ù×ï8ú÷½’º.
 Vsquid:UselessImportCheck"+Remove this unused import 'java.util.Date'.(¸…¼ü8À¸¼’º.
+Wsquid:S4719"9Replace charset name argument with StandardCharsets.UTF_8(µÿí÷8»óñ³¼.
+^squid:UselessImportCheck".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8À¸¼’º.
+bsquid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8À¸¼’º.
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ìú¯ä8†ìÉ’º.
 Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ú÷½’º.

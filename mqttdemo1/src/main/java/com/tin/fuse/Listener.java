@@ -31,7 +31,7 @@ class Listener {
         String password = env("ACTIVEMQ_PASSWORD", "chuangkou88");
         String host = env("ACTIVEMQ_HOST", "192.168.10.200");
         int port = Integer.parseInt(env("ACTIVEMQ_PORT", "1883"));
-        final String destination = arg(args, 0, "mqtt/bbb");
+        final String destination = arg(args, 0, "mq/bbb");
 
 
         MQTT mqtt = new MQTT();

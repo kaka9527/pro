@@ -7,20 +7,22 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
 public class SendBinDataThread implements Runnable {
     private static final Logger logger = LoggerFactory.getLogger(SendBinDataThread.class);
 
-    private String filePath;
+    ConcurrentHashMap<String, byte[]> binBytes;
     private String moduleId;
     private MqttMessageClient mqttMessageClient;
 
-    public SendBinDataThread(MqttMessageClient mqttMessageClient, String filePath, String moduleId){
-        this.filePath = filePath;
+    public SendBinDataThread(MqttMessageClient mqttMessageClient, ConcurrentHashMap<String, byte[]> binBytes, String moduleId){
         this.moduleId = moduleId;
+        this.binBytes = binBytes;
         this.mqttMessageClient = mqttMessageClient;
     }
 
@@ -28,7 +30,8 @@ public class SendBinDataThread implements Runnable {
     public void run() {
         try{
             // 发送数据报文
-            HashMap<String, String> dataMessage = UpdateFileMessage.getDataMessage(filePath, moduleId);
+            //HashMap<String, String> dataMessage = UpdateFileMessage.getDataMessage(filePath, moduleId);
+            HashMap<String, String> dataMessage = UpdateFileMessage.getDataMessage(this.binBytes,moduleId);
             sendDataMessage(dataMessage);
         }catch (Exception e) {
             logger.error(" error ",e);

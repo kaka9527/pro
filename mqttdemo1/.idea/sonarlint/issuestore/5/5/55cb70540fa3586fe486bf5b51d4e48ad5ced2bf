@@ -1,12 +1,12 @@
 
-V
-squid:S106%"9Replace this use of System.out or System.err by a logger.(¯²»Ï8 èË„µ.
-[
-squid:S106#"9Replace this use of System.out or System.err by a logger.(°«çôøÿÿÿÿ8 èË„µ.
-[
-squid:S106+"9Replace this use of System.out or System.err by a logger.(óîŸ úÿÿÿÿ8ŠôÍ„µ.
 ‹squid:UselessImportCheck"[Remove this unused import 'org.springframework.integration.mqtt.event.MqttSubscribedEvent'.(ÖÉİÚûÿÿÿÿ8¼Ñ×õ¹.
 V
 squid:S106"9Replace this use of System.out or System.err by a logger.(™¿—ç8¿ËÊ„µ.
+[
+squid:S106$"9Replace this use of System.out or System.err by a logger.(°«çôøÿÿÿÿ8 èË„µ.
 V
-squid:S106$"9Replace this use of System.out or System.err by a logger.(ô¤É•8 èË„µ.
+squid:S106%"9Replace this use of System.out or System.err by a logger.(ô¤É•8 èË„µ.
+[
+squid:S106,"9Replace this use of System.out or System.err by a logger.(óîŸ úÿÿÿÿ8ŠôÍ„µ.
+V
+squid:S106&"9Replace this use of System.out or System.err by a logger.(¯²»Ï8 èË„µ.

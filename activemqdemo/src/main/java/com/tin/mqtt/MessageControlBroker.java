@@ -5,6 +5,7 @@ import org.apache.activemq.broker.region.MessageReference;
 import org.apache.activemq.broker.region.Subscription;
 import org.apache.activemq.broker.region.Topic;
 import org.apache.activemq.command.*;
+import org.apache.activemq.util.ByteSequence;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -87,6 +88,8 @@ public class MessageControlBroker extends BrokerFilter {
         String physicalName = messageSend.getDestination().getPhysicalName();
         Message message = messageSend.getMessage();
         String msg = message.toString();
+        byte[] content = messageSend.getContent().getData();
+        log.info("content: "+new String(content));
         byte[] data = message.getContent().getData();
         log.info("---broker send msg : "+new String(data));
         //log.info("---broker send msg1 : "+msg);
@@ -97,4 +100,6 @@ public class MessageControlBroker extends BrokerFilter {
 //        purgeMessage(messageSend);
         super.send(producerExchange, messageSend);
     }
+
+
 }

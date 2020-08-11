@@ -13,10 +13,10 @@ package com.tin.config;//package com.tin.it.config;
 //import org.springframework.integration.annotation.ServiceActivator;
 //import org.springframework.integration.channel.DirectChannel;
 //import org.springframework.integration.core.MessageProducer;
-//import org.springframework.integration.mqtt.core.DefaultMqttPahoClientFactory;
-//import org.springframework.integration.mqtt.core.MqttPahoClientFactory;
-//import org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter;
-//import org.springframework.integration.mqtt.support.DefaultPahoMessageConverter;
+//import org.springframework.integration.mq.core.DefaultMqttPahoClientFactory;
+//import org.springframework.integration.mq.core.MqttPahoClientFactory;
+//import org.springframework.integration.mq.inbound.MqttPahoMessageDrivenChannelAdapter;
+//import org.springframework.integration.mq.support.DefaultPahoMessageConverter;
 //import org.springframework.messaging.*;
 //
 //@Configuration
@@ -35,24 +35,24 @@ package com.tin.config;//package com.tin.it.config;
 //        WILL_DATA = "offline".getBytes();
 //    }
 //
-//    @Value("${spring.mqtt.client.username}")
+//    @Value("${spring.mq.client.username}")
 //    private String username;
-//    @Value("${spring.mqtt.client.password}")
+//    @Value("${spring.mq.client.password}")
 //    private String password;
-//    @Value("${spring.mqtt.client.serverURIs}")
+//    @Value("${spring.mq.client.serverURIs}")
 //    private String serverURIs;
-//    @Value("${spring.mqtt.client.clientId}")
+//    @Value("${spring.mq.client.clientId}")
 //    private String clientId;
-//    @Value("${spring.mqtt.client.keepAliveInterval}")
+//    @Value("${spring.mq.client.keepAliveInterval}")
 //    private int keepAliveInterval;
-//    @Value("${spring.mqtt.client.connectionTimeout}")
+//    @Value("${spring.mq.client.connectionTimeout}")
 //    private int connectionTimeout;
 //
-//    @Value("${spring.mqtt.consumer.defaultQos}")
+//    @Value("${spring.mq.consumer.defaultQos}")
 //    private int defaultConsumerQos;
-//    @Value("${spring.mqtt.consumer.completionTimeout}")
+//    @Value("${spring.mq.consumer.completionTimeout}")
 //    private long completionTimeout;
-//    @Value("${spring.mqtt.consumer.consumerTopics}")
+//    @Value("${spring.mq.consumer.consumerTopics}")
 //    private String[] consumerTopics;
 //
 //    /**

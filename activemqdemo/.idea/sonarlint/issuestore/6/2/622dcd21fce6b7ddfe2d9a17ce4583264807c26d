@@ -1,27 +1,30 @@
 
-nsquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(¼ùÛÅúÿÿÿÿ8¹ þ”º.
-isquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(‰ŸÕÑ8™ÑÞÎ¹.
-Ksquid:S1481Y"(Remove this unused "msg" local variable.(ÒŒ’üúÿÿÿÿ8‰€¢’».
-_squid:S3457"AFormat specifiers should be used instead of string concatenation.(ÆšÔÚ8¶’Š•º.
-_squid:S3457""AFormat specifiers should be used instead of string concatenation.(õ¯Ô´8š€ØÎ¹.
-isquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(ðþð8­”³¹».
-isquid:CommentedOutCodeLine\"<This block of commented-out lines of code should be removed.(Þá¼Î8‰€¢’».
-Nsquid:S1481W"1Remove this unused "physicalName" local variable.(·ÚªE8Ò…ï•º.
-_squid:S3457]"AFormat specifiers should be used instead of string concatenation.(ãžå8¡–¢’».
-Zsquid:S1854Y"7Remove this useless assignment to local variable "msg".(ÒŒ’üúÿÿÿÿ8‰€¢’».
-nsquid:CommentedOutCodeLine^"<This block of commented-out lines of code should be removed.(¾ÜßÜþÿÿÿÿ8¡–¢’».
-_squid:S3457"AFormat specifiers should be used instead of string concatenation.(Õ¤²Ò8‡Õõè¹.
-Usquid:S1068"7Remove this unused "DEFAULT_PURGE_COUNT" private field.(ã‰¿ô8­”³¹».
-nsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8™ÑÞÎ¹.
-dsquid:S2184"FCast one of the operands of this multiplication operation to a "long".(óß³°8ýØÔ£·.
-_squid:S3457["AFormat specifiers should be used instead of string concatenation.(Î‹øö8ôê•º.
-zsquid:S2629["\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(Î‹øö8ôê•º.
-zsquid:S2629"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÆšÔÚ8¶’Š•º.
-Tsquid:S1068"6Remove this unused "DEFAULT_EXPIRATION" private field.(óß³°8¼ö³¹».
-Usquid:S2629""7Use the built-in formatting to construct this argument.(õ¯Ô´8š€ØÎ¹.
-Ksquid:S1185)"(Remove this method to simply inherit it.(¤ðÌ›þÿÿÿÿ8«¹¤œº.
-_squid:S3457"AFormat specifiers should be used instead of string concatenation.(ƒ“áÔ8Áçóè¹.
-]squid:S1854W"@Remove this useless assignment to local variable "physicalName".(·ÚªE8Ò…ï•º.
-Ksquid:S1185."(Remove this method to simply inherit it.(ñæ•½ùÿÿÿÿ8¹ þ”º.
-Usquid:S2629]"7Use the built-in formatting to construct this argument.(ãžå8¡–¢’».
-Ksquid:S1185;"(Remove this method to simply inherit it.(—„æ«øÿÿÿÿ8ƒºë•º.
+isquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(ðþð8­”³¹».
+_squid:S3457"AFormat specifiers should be used instead of string concatenation.(ƒ“áÔ8Áçóè¹.
+Ksquid:S1185*"(Remove this method to simply inherit it.(¤ðÌ›þÿÿÿÿ8«¹¤œº.
+]squid:S1854X"@Remove this useless assignment to local variable "physicalName".(·ÚªE8Ò…ï•º.
+Tsquid:S1068"6Remove this unused "DEFAULT_EXPIRATION" private field.(óß³°8¼ö³¹».
+Usquid:S2629#"7Use the built-in formatting to construct this argument.(õ¯Ô´8š€ØÎ¹.
+Ksquid:S1185<"(Remove this method to simply inherit it.(—„æ«øÿÿÿÿ8ƒºë•º.
+Nsquid:S1481X"1Remove this unused "physicalName" local variable.(·ÚªE8Ò…ï•º.
+nsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8™ÑÞÎ¹.
+_squid:S3457^"AFormat specifiers should be used instead of string concatenation.(Î‹øö8ôê•º.
+nsquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(¼ùÛÅúÿÿÿÿ8¹ þ”º.
+Ksquid:S1185/"(Remove this method to simply inherit it.(ñæ•½ùÿÿÿÿ8¹ þ”º.
+isquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(‰ŸÕÑ8™ÑÞÎ¹.
+_squid:S3457"AFormat specifiers should be used instead of string concatenation.(Õ¤²Ò8‡Õõè¹.
+Zsquid:S1854Z"7Remove this useless assignment to local variable "msg".(ÒŒ’üúÿÿÿÿ8‰€¢’».
+Ksquid:S1481Z"(Remove this unused "msg" local variable.(ÒŒ’üúÿÿÿÿ8‰€¢’».
+msquid:UselessImportCheck"BRemove this unused import 'org.apache.activemq.util.ByteSequence'.(éŸ†®8øä¹½.
+_squid:S3457`"AFormat specifiers should be used instead of string concatenation.(ãžå8¡–¢’».
+zsquid:S2629^"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(Î‹øö8ôê•º.
+_squid:S3457 "AFormat specifiers should be used instead of string concatenation.(ÆšÔÚ8¶’Š•º.
+isquid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(Þá¼Î8‰€¢’».
+dsquid:S2184"FCast one of the operands of this multiplication operation to a "long".(óß³°8ýØÔ£·.
+nsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(¾ÜßÜþÿÿÿÿ8¡–¢’».
+_squid:S3457\"AFormat specifiers should be used instead of string concatenation.(æã•8¬Ö¹½.
+_squid:S3457#"AFormat specifiers should be used instead of string concatenation.(õ¯Ô´8š€ØÎ¹.
+zsquid:S2629 "\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÆšÔÚ8¶’Š•º.
+zsquid:S2629\"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(æã•8›¶è¹½.
+Usquid:S1068"7Remove this unused "DEFAULT_PURGE_COUNT" private field.(ã‰¿ô8­”³¹».
+Usquid:S2629`"7Use the built-in formatting to construct this argument.(ãžå8¡–¢’».

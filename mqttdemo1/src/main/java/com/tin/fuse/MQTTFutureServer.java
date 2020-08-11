@@ -20,9 +20,9 @@ public class MQTTFutureServer {
     private final static short KEEP_ALIVE = 30;// 低耗网络，但是又需要及时获取数据，心跳30s
 
     public  static Topic[] topics = {
-            new Topic("mqtt/aaa", QoS.EXACTLY_ONCE),
-            new Topic("mqtt/bbb", QoS.AT_LEAST_ONCE),
-            new Topic("mqtt/ccc", QoS.AT_MOST_ONCE)};
+            new Topic("mq/aaa", QoS.EXACTLY_ONCE),
+            new Topic("mq/bbb", QoS.AT_LEAST_ONCE),
+            new Topic("mq/ccc", QoS.AT_MOST_ONCE)};
 
     public final  static long RECONNECTION_ATTEMPT_MAX=6;
     public final  static long RECONNECTION_DELAY=2000;
@@ -54,13 +54,13 @@ public class MQTTFutureServer {
 
  			 /*
  			 //设置“遗嘱”消息的内容，默认是长度为零的消息
- 			 mqtt.setWillMessage("willMessage");
+ 			 mq.setWillMessage("willMessage");
  			 //设置“遗嘱”消息的QoS，默认为QoS.ATMOSTONCE
- 			 mqtt.setWillQos(QoS.AT_LEAST_ONCE);
+ 			 mq.setWillQos(QoS.AT_LEAST_ONCE);
  			 //若想要在发布“遗嘱”消息时拥有retain选项，则为true
- 			 mqtt.setWillRetain(true);
+ 			 mq.setWillRetain(true);
  			 //设置“遗嘱”消息的话题，若客户端与服务器之间的连接意外中断，服务器将发布客户端的“遗嘱”消息
- 			 mqtt.setWillTopic("willTopic");
+ 			 mq.setWillTopic("willTopic");
  			 */
 
             //==失败重连接设置说明
@@ -69,15 +69,15 @@ public class MQTTFutureServer {
             //设置重连的间隔时间  ,首次重连接间隔毫秒数，默认为10ms
             mqtt.setReconnectDelay(RECONNECTION_DELAY);
             //客户端首次连接到服务器时，连接的最大重试次数，超出该次数客户端将返回错误。-1意为无重试上限，默认为-1
-            //mqtt.setConnectAttemptsMax(10L);
+            //mq.setConnectAttemptsMax(10L);
             //重连接间隔毫秒数，默认为30000ms
-            //mqtt.setReconnectDelayMax(30000L);
+            //mq.setReconnectDelayMax(30000L);
             //设置重连接指数回归。设置为1则停用指数回归，默认为2
-            //mqtt.setReconnectBackOffMultiplier(2);
+            //mq.setReconnectBackOffMultiplier(2);
 
             //== Socket设置说明
             //设置socket接收缓冲区大小，默认为65536（64k）
-            //mqtt.setReceiveBufferSize(65536);
+            //mq.setReceiveBufferSize(65536);
             //设置socket发送缓冲区大小，默认为65536（64k）
             mqtt.setSendBufferSize(SEND_BUFFER_SIZE);
             ////设置发送数据包头的流量类型或服务类型字段，默认为8，意为吞吐量最大化传输
@@ -91,7 +91,7 @@ public class MQTTFutureServer {
 
             //==选择消息分发队列
             //若没有调用方法setDispatchQueue，客户端将为连接新建一个队列。如果想实现多个连接使用公用的队列，显式地指定队列是一个非常方便的实现方法
-            //mqtt.setDispatchQueue(Dispatch.createQueue("mqtt/aaa"));
+            //mq.setDispatchQueue(Dispatch.createQueue("mq/aaa"));
 
              //==设置跟踪器
              mqtt.setTracer(new Tracer(){
@@ -109,13 +109,13 @@ public class MQTTFutureServer {
                  }
              });
 
-            /*connection = mqtt.blockingConnection();
+            /*connection = mq.blockingConnection();
             connection.connect();
             int count=0;
             while(true){
                 count++;
                 //订阅的主题
-                String topic="mqtt/bbb";
+                String topic="mq/bbb";
                 //主题的内容
                 String message="hello "+count+"chinese people !";
                 connection.publish(topic, message.getBytes(), QoS.AT_LEAST_ONCE, false);
@@ -124,7 +124,7 @@ public class MQTTFutureServer {
             }*/
 
             //使用Future创建连接
-            /*final FutureConnection connection= mqtt.futureConnection();
+            /*final FutureConnection connection= mq.futureConnection();
             connection.connect();
             int count=1;
             while(count < 10){
@@ -132,7 +132,7 @@ public class MQTTFutureServer {
                 // 用于发布消息，目前手机段不需要向服务端发送消息
                 //主题的内容
                 String message="Hello "+count+" MQTT...";
-                String topic = "mqtt/bbb";
+                String topic = "mq/bbb";
                 connection.publish(topic, message.getBytes(), QoS.AT_LEAST_ONCE,
                         false);
                 logger.info("MQTTFutureServer.publish Message "+"Topic Title :"+topic+" context :"+message);
@@ -158,12 +158,12 @@ public class MQTTFutureServer {
                 //连接断开
              @Override
              public void onDisconnected() {
-              logger.info("====mqtt disconnected=====");
+              logger.info("====mq disconnected=====");
              }
              //连接成功
              @Override
              public void onConnected() {
-              logger.info("====mqtt connected=====");
+              logger.info("====mq connected=====");
              }
             });*/
              //连接
@@ -178,7 +178,7 @@ public class MQTTFutureServer {
                  public void onSuccess(Void v) {
                      logger.info(" onSuccess ");
                      /*//订阅主题
-                     Topic[] topics = {new Topic("mqtt/bbb", QoS.AT_LEAST_ONCE)};
+                     Topic[] topics = {new Topic("mq/bbb", QoS.AT_LEAST_ONCE)};
                      callbackConnection.subscribe(topics, new Callback<byte[]>() {
                          //订阅主题成功
                          @Override
@@ -194,7 +194,7 @@ public class MQTTFutureServer {
                      });*/
                      while (true){
                          //发布消息
-                         callbackConnection.publish("mqtt/bbb", (" test Hello ").getBytes(), QoS.AT_LEAST_ONCE, true, new Callback<Void>() {
+                         callbackConnection.publish("mq/bbb", (" test Hello ").getBytes(), QoS.AT_LEAST_ONCE, true, new Callback<Void>() {
                              @Override
                              public void onSuccess(Void v) {
                                  logger.info("===========消息发布成功============");

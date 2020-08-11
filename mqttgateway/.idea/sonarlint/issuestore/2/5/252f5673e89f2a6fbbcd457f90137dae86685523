@@ -1,22 +1,8 @@
 
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¸§€ úÿÿÿÿ
-?squid:S1148m"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-wsquid:S1149˜"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰
-esquid:S3457ö"AFormat specifiers should be used instead of string concatenation.(©ÅÝÊúÿÿÿÿ8”èŒê¹.
-9squid:S1643Ì"Use a StringBuilder instead.(Ã‚üüÿÿÿÿ
-fsquid:UnusedPrivateMethodÚ"4Remove this unused private "sendDataMessage" method.(¼†ÆŒÿÿÿÿÿ8ãÏ©é¹.
-:squid:S3626æ"Remove this redundant jump.(ÉŠ©ƒ8ãÏ©é¹.
-bsquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(´Ûÿü
-8squid:S1643g"Use a StringBuilder instead.(Ë¬àúÿÿÿÿ
-Vsquid:S2629ü"7Use the built-in formatting to construct this argument.(ù„Óß8”èŒê¹.
-gsquid:UnusedPrivateMethodï"5Remove this unused private "retrySendMessage" method.(¥á¦Éúÿÿÿÿ8©ê¹.
-9squid:S1643ª"Use a StringBuilder instead.(Ã‚üüÿÿÿÿ
-gsquid:CommentedOutCodeLineJ"<This block of commented-out lines of code should be removed.(¦Œ…Îúÿÿÿÿ
-bsquid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(ðÌ¸À
-msquid:S4201ñ"IRemove this unnecessary null check; "instanceof" returns false for nulls.(³°Õþÿÿÿÿ8ãÏ©é¹.
-`squid:S3457ü"AFormat specifiers should be used instead of string concatenation.(ù„Óß8”èŒê¹.
-wsquid:S1149¸"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰
-gsquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(¹‘÷­ùÿÿÿÿ
-[squid:UnusedPrivateMethodt"1Remove this unused private "makeChecksum" method.(©÷ÁŽùÿÿÿÿ
-osquid:CommentedOutCodeLineá"<This block of commented-out lines of code should be removed.(¦‡ñòùÿÿÿÿ8•±‰ê¹.
-[squid:S2629ö"7Use the built-in formatting to construct this argument.(©ÅÝÊúÿÿÿÿ8”èŒê¹.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¸§€ úÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¹‘÷­ùÿÿÿÿ
+gsquid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(¦Œ…Îúÿÿÿÿ
+]squid:S1118":Add a private constructor to hide the implicit public one.(óûƒ·ùÿÿÿÿ8Û“ó²¼.
+8squid:S1643Y"Use a StringBuilder instead.(Ë¬àúÿÿÿÿ
+@squid:S1643"Use a StringBuilder instead.(Ã‚üüÿÿÿÿ8Ó†ð˜¼.
+@squid:S1643¡"Use a StringBuilder instead.(Ã‚üüÿÿÿÿ8Ó†ð˜¼.

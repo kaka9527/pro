@@ -1,24 +1,31 @@
 
-V
-squid:S106|"9Replace this use of System.out or System.err by a logger.(‚¦óå8©‰ÞÝµ.
-osquid:CommentedOutCodeLine‘"<This block of commented-out lines of code should be removed.(»‘›´øÿÿÿÿ8ÑÇ¸‰¶.
-[
-squid:S106%"9Replace this use of System.out or System.err by a logger.(Ôç¾üÿÿÿÿ8à¾Ð³µ.
-[
-squid:S106^"9Replace this use of System.out or System.err by a logger.(ñçŠ“øÿÿÿÿ8åùÃÜµ.
-V
-squid:S106N"9Replace this use of System.out or System.err by a logger.(¿Çðª8Ê¾±‡¶.
-bsquid:S1854w"?Remove this useless assignment to local variable "datatiemhex".(½´¿Îûÿÿÿÿ8«Óíˆ¶.
-isquid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(øÄ¹†8Ì¤·‡¶.
-nsquid:CommentedOutCodeLinex"<This block of commented-out lines of code should be removed.(æ™žÉÿÿÿÿÿ8ýÎüµ.
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÑÛ¿Öþÿÿÿÿ8à¾Ð³µ.
-\
-squid:S106Ž"9Replace this use of System.out or System.err by a logger.(úÿœÄýÿÿÿÿ8òŒÓ€¶.
-~squid:UselessImportCheck"SRemove this unused import 'com.google.common.util.concurrent.ThreadFactoryBuilder'.(Òä˜¥8¡Ñç…¶.
-Fsquid:S1148~"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ú«ÝÝµ.
-Gsquid:S1148±"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÔæÑ€¶.
-V
-squid:S106:"9Replace this use of System.out or System.err by a logger.(‘·—‹8åùÃÜµ.
-osquid:CommentedOutCodeLine¥"<This block of commented-out lines of code should be removed.(’¬–Ãþÿÿÿÿ8±ùú‰¶.
 `squid:UselessImportCheck"5Remove this unused import 'io.netty.buffer.Unpooled'.(ÏÁ¤ê8ÚÏÇ‰¶.
+[
+squid:S1062"9Replace this use of System.out or System.err by a logger.(ÚÝÌøÿÿÿÿ8ÕµÀ¼.
+V
+squid:S106>"9Replace this use of System.out or System.err by a logger.(‘·—‹8åùÃÜµ.
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÑÛ¿Öþÿÿÿÿ8à¾Ð³µ.
+Gsquid:S1148µ"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÔæÑ€¶.
+V
+squid:S106R"9Replace this use of System.out or System.err by a logger.(¿Çðª8Ê¾±‡¶.
+\
+squid:S106’"9Replace this use of System.out or System.err by a logger.(úÿœÄýÿÿÿÿ8òŒÓ€¶.
+nsquid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(ù€õ”ûÿÿÿÿ8Žìñ²½.
+isquid:CommentedOutCodeLineP"<This block of commented-out lines of code should be removed.(øÄ¹†8Ì¤·‡¶.
+nsquid:CommentedOutCodeLine}"<This block of commented-out lines of code should be removed.(Ä©Ëÿýÿÿÿÿ8¯ñÓ²½.
+[
+squid:S106b"9Replace this use of System.out or System.err by a logger.(ñçŠ“øÿÿÿÿ8åùÃÜµ.
+osquid:CommentedOutCodeLine•"<This block of commented-out lines of code should be removed.(»‘›´øÿÿÿÿ8ÑÇ¸‰¶.
+esquid:UselessImportCheck"5Remove this unused import 'java.nio.charset.Charset'.(ü¶ØŸýÿÿÿÿ8ÎŽŸÀ¼.
+V
+squid:S106;"9Replace this use of System.out or System.err by a logger.(ôêƒ8–¤ŒÀ¼.
+V
+squid:S106|"9Replace this use of System.out or System.err by a logger.(–ÐÓõ8¯ñÓ²½.
+~squid:UselessImportCheck"SRemove this unused import 'com.google.common.util.concurrent.ThreadFactoryBuilder'.(Òä˜¥8¡Ñç…¶.
+osquid:CommentedOutCodeLine©"<This block of commented-out lines of code should be removed.(’¬–Ãþÿÿÿÿ8±ùú‰¶.
+Gsquid:S1148‚"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ú«ÝÝµ.
+[
+squid:S106&"9Replace this use of System.out or System.err by a logger.(Ôç¾üÿÿÿÿ8à¾Ð³µ.
+W
+squid:S106€"9Replace this use of System.out or System.err by a logger.(‚¦óå8©‰ÞÝµ.

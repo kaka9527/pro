@@ -8,16 +8,16 @@ package com.tin.config;//package com.tin.it.config;
 //import org.springframework.integration.annotation.ServiceActivator;
 //import org.springframework.integration.channel.DirectChannel;
 //import org.springframework.integration.core.MessageProducer;
-//import org.springframework.integration.mqtt.core.DefaultMqttPahoClientFactory;
-//import org.springframework.integration.mqtt.core.MqttPahoClientFactory;
-//import org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter;
-//import org.springframework.integration.mqtt.outbound.MqttPahoMessageHandler;
-//import org.springframework.integration.mqtt.support.DefaultPahoMessageConverter;
+//import org.springframework.integration.mq.core.DefaultMqttPahoClientFactory;
+//import org.springframework.integration.mq.core.MqttPahoClientFactory;
+//import org.springframework.integration.mq.inbound.MqttPahoMessageDrivenChannelAdapter;
+//import org.springframework.integration.mq.outbound.MqttPahoMessageHandler;
+//import org.springframework.integration.mq.support.DefaultPahoMessageConverter;
 //import org.springframework.messaging.MessageChannel;
 //import org.springframework.messaging.MessageHandler;
 //
 ///**
-// * mqtt 配置
+// * mq 配置
 // */
 //@Configuration
 //public class MqttConfig {
@@ -28,31 +28,31 @@ package com.tin.config;//package com.tin.it.config;
 //
 //    public static final String RECEIVED_TOPIC_KEY = "mqtt_receivedTopic";
 //
-//    @Value("${spring.mqtt.client.username}")
+//    @Value("${spring.mq.client.username}")
 //    private String username;
-//    @Value("${spring.mqtt.client.password}")
+//    @Value("${spring.mq.client.password}")
 //    private String password;
-//    @Value("${spring.mqtt.client.serverURIs}")
+//    @Value("${spring.mq.client.serverURIs}")
 //    private String[] serverURIs;
-//    @Value("${spring.mqtt.client.clientId}")
+//    @Value("${spring.mq.client.clientId}")
 //    private String clientId;
-//    @Value("${spring.mqtt.client.keepAliveInterval}")
+//    @Value("${spring.mq.client.keepAliveInterval}")
 //    private int keepAliveInterval;
-//    @Value("${spring.mqtt.client.connectionTimeout}")
+//    @Value("${spring.mq.client.connectionTimeout}")
 //    private int connectionTimeout;
 //
-//    @Value("${spring.mqtt.producer.defaultQos}")
+//    @Value("${spring.mq.producer.defaultQos}")
 //    private int defaultProducerQos;
-//    @Value("${spring.mqtt.producer.defaultRetained}")
+//    @Value("${spring.mq.producer.defaultRetained}")
 //    private boolean defaultRetained;
-//    @Value("${spring.mqtt.producer.defaultTopic}")
+//    @Value("${spring.mq.producer.defaultTopic}")
 //    private String defaultTopic;
 //
-//    @Value("${spring.mqtt.consumer.defaultQos}")
+//    @Value("${spring.mq.consumer.defaultQos}")
 //    private int defaultConsumerQos;
-//    @Value("${spring.mqtt.consumer.completionTimeout}")
+//    @Value("${spring.mq.consumer.completionTimeout}")
 //    private long completionTimeout;
-//    @Value("${spring.mqtt.consumer.consumerTopics}")
+//    @Value("${spring.mq.consumer.consumerTopics}")
 //    private String[] consumerTopics;
 //
 //    /* 客户端 */

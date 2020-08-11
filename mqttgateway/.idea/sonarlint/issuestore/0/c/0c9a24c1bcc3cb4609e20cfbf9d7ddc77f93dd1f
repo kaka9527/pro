@@ -1,3 +1,7 @@
 
-Ysquid:S26969"6Make the enclosing method "static" or remove this set.(àñ»­ûÿÿÿÿ8¯˜ë‘».
-9squid:S36265"Remove this redundant jump.(ÉŠ©ƒ8†ò¹î¹.
+`squid:UselessImportCheck
+"0Remove this unused import 'java.util.Hashtable'.(Œ»ÏÊüÿÿÿÿ8Šø‰¼¼.
+¨squid:S1319"„The type of the "binBytes" object should be an interface such as "ConcurrentMap" rather than the implementation "ConcurrentHashMap".(²õñ§úÿÿÿÿ8ÀŒö½¼.
+9squid:S36268"Remove this redundant jump.(ÉŠ©ƒ8†ò¹î¹.
+nsquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(Õ±Œëúÿÿÿÿ8Ø³‹¼¼.
+Ysquid:S2696<"6Make the enclosing method "static" or remove this set.(àñ»­ûÿÿÿÿ8¯˜ë‘».

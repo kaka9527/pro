@@ -16,6 +16,7 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class UpdateFileMessage {
 
@@ -24,7 +25,7 @@ public class UpdateFileMessage {
     private final static int PACKET_SIZE = 2000;
 
     /**
-     * 检查版本报文
+     * 检查版本报文 数据标: 0400040F
      */
     public static String getCheckVersionMessage(String moduleId, String version){
         //获取最新的版本号
@@ -56,80 +57,23 @@ public class UpdateFileMessage {
         return pduMsg;
     }
 
-    /**
-     * 获取bin文件数据
-     * @param filePath
-     * @return
-     */
-    public static Hashtable<String,byte[]> getBinData(String filePath){
-        File file = new File(filePath);
-        Hashtable<String,byte[]> binData = null;
-        if(file.exists() && file.isFile()){
-            FileInputStream fis = null;
-            DataInputStream dis = null;
-            try {
-                fis = new FileInputStream(file);
-                dis = new DataInputStream(fis);
-                // 文件大小
-                int len = (int)file.length();
-
-                // 计算总包数
-                int y = len / PACKET_SIZE;
-                int s = len % PACKET_SIZE;
-                if(s > 0 && s < PACKET_SIZE){
-                    y = y + 1;
-                }
-                LOG.info("包数："+ y);
-
-                // 数据包
-                binData = new Hashtable<>(y);
-                byte [] bytes = new byte[PACKET_SIZE];
-                int n = 0;
-                int x = 0;
-                String msg = "";
-                while ((n = dis.read(bytes)) != -1){
-                    x = x + 1;
-                    String key = String.valueOf(y) + "_"+x;
-                    binData.put(key,bytes);
-                }
-                // close
-                dis.close();
-                fis.close();
-            } catch (Exception e) {
-                LOG.error("读取bin文件异常",e);
-            } finally {
-                try {
-                    if (null != dis) {
-                        dis.close();
-                    }
-                } catch (IOException e) {
-                    LOG.error("关闭流异常1",e);
-                }
-                try {
-                    if (null != fis) {
-                        fis.close();
-                    }
-                } catch (IOException e) {
-                    LOG.error("关闭流异常2",e);
-                }
-            }
-        }
-        return binData;
+    public static HashMap<String,String> getDataMessage(ConcurrentHashMap<String, byte[]> bytes,String moduleId){
+        HashMap<String,String> msgMap = getHexDataPacket(bytes,moduleId);
+        return msgMap;
     }
 
-    public static HashMap<String,String> getDataMessage(String filePath,String moduleId){
-        Hashtable<String, byte[]> binData = getBinData(filePath);
+    private static HashMap<String,String> getHexDataPacket(ConcurrentHashMap<String, byte[]> binBytes,String moduleId){
         HashMap<String,String> msgMap = new HashMap<>();
-        int size = binData.size();
+        int size = binBytes.size();
         String sizeStr = String.valueOf(size);
         int x = 0;
         String msg = "";
         //
-        Iterator<Map.Entry<String, byte[]>> datas = binData.entrySet().iterator();
+        Iterator<Map.Entry<String, byte[]>> datas = binBytes.entrySet().iterator();
         while (datas.hasNext()) {
             Map.Entry<String, byte[]> entry = datas.next();
             x = x + 1;
-            String key = sizeStr + "_" + x;
+            String key = Integer.toHexString(size) + "_" + Integer.toHexString(x);
             if(x < size){
                 msg = setDataMessage(entry.getValue(),"D2",sizeStr,String.valueOf(x),moduleId);
             }else {

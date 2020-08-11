@@ -379,7 +379,6 @@ public class MessageStringDLTUtils {
      * @Description:解析错误报文回复
      */
     public static String errorMessage(String errormsg) {
-        String controlID = errormsg.substring(24, 26);
         String datalong = errormsg.substring(26, 28);
         String data = errormsg.substring(28, 28 + (Integer.valueOf(datalong) * 2));
 
@@ -419,7 +418,12 @@ public class MessageStringDLTUtils {
 
     //组合设备地址 倒序
     public static String machineAddressHex(String address) {
+        String addressHex = getHexAddress(address);
+        addressHex = addZeroForNumFRight(addressHex, 12);
+        return addressHex;
+    }
 
+    private static String getHexAddress(String address){
         String addressHex = "";
         int start = 2;
         int end = 0;
@@ -431,26 +435,12 @@ public class MessageStringDLTUtils {
                 end += 2;
             }
         }
-
-        addressHex = addZeroForNumFRight(addressHex, 12);
         return addressHex;
     }
 
     //组合设备地址 正序
     public static String machineAddressHexOpposite(String address) {
-
-        String addressHex = "";
-        int start = 2;
-        int end = 0;
-        for (int i = 0; i < 6; i++) {
-            if (address.length() >= start) {
-                String str = address.substring(address.length() - start, address.length() - end);
-                addressHex += str;
-                start += 2;
-                end += 2;
-            }
-        }
-
+        String addressHex = getHexAddress(address);
         addressHex = addZeroForNumLeft(addressHex, 12);
         return addressHex;
     }
@@ -472,15 +462,13 @@ public class MessageStringDLTUtils {
 
     public static String addZeroForNumLeft(String str, int strLength) {
         int strLen = str.length();
-        if (strLen < strLength) {
-            while (strLen < strLength) {
-                StringBuffer sb = new StringBuffer();
-                sb.append("0").append(str);//左补0
-                str = sb.toString();
-                strLen = str.length();
-            }
+        StringBuffer sb = new StringBuffer();
+        while (strLen < strLength) {
+            //左补0
+            sb.append("0").append(str);
+            str = sb.toString();
+            strLen = str.length();
         }
-
         return str;
     }
 

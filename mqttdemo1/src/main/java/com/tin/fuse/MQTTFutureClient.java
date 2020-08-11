@@ -18,9 +18,9 @@ public class MQTTFutureClient {
     private final static short KEEP_ALIVE = 30;
     private final static String DEVICE_ID = "000100000035";
     public static Topic[] topics = {
-            new Topic("mqtt/aaa", QoS.EXACTLY_ONCE),
-            new Topic("mqtt/bbb", QoS.AT_LEAST_ONCE),
-            new Topic("mqtt/ccc", QoS.AT_MOST_ONCE) };
+            new Topic("mq/aaa", QoS.EXACTLY_ONCE),
+            new Topic("mq/bbb", QoS.AT_LEAST_ONCE),
+            new Topic("mq/ccc", QoS.AT_MOST_ONCE) };
 
     public final static long RECONNECTION_ATTEMPT_MAX = 6;
     public final static long RECONNECTION_DELAY = 2000;
@@ -46,7 +46,7 @@ public class MQTTFutureClient {
             // 设置心跳时间
             mqtt.setKeepAlive(KEEP_ALIVE);
             // 设置缓冲的大小
-            //mqtt.setSendBufferSize(SEND_BUFFER_SIZE);
+            //mq.setSendBufferSize(SEND_BUFFER_SIZE);
             //服务器认证用户名
             mqtt.setUserName("chuangkou");
             //服务器认证密码
@@ -57,11 +57,11 @@ public class MQTTFutureClient {
             mqtt.setVersion("3.3.1");
 
             /*//获取mqtt的连接对象BlockingConnection
-            connection = mqtt.blockingConnection();
+            connection = mq.blockingConnection();
             //MQTT连接的创建
             connection.connect();
             //创建相关的MQTT 的主题列表
-            Topic[] topics = {new Topic("mqtt/#", QoS.AT_LEAST_ONCE)};
+            Topic[] topics = {new Topic("mq/#", QoS.AT_LEAST_ONCE)};
             //订阅相关的主题信息
             byte[] qoses = connection.subscribe(topics);
             logger.info(String.valueOf(qoses));
@@ -80,7 +80,7 @@ public class MQTTFutureClient {
             }*/
 
             //
-            /*connection = mqtt.futureConnection();
+            /*connection = mq.futureConnection();
             connection.connect();
             connection.subscribe(topics);
             int count = 0;

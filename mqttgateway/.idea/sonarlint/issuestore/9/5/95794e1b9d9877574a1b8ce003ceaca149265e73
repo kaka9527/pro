@@ -1,17 +1,15 @@
 
-asquid:S2259{"EA "NullPointerException" could be thrown; "binData" is nullable here.(ÿßÚ…ÿÿÿÿÿ
-nsquid:S3776@"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(’²ŞØúÿÿÿÿ
-]squid:S3457R"AFormat specifiers should be used instead of string concatenation.(Ÿ¿¾¢üÿÿÿÿ
-Dsquid:S1481Y"(Remove this unused "msg" local variable.(‰œòùÿÿÿÿ
-Xsquid:S3457+"AFormat specifiers should be used instead of string concatenation.(¾´‰
-Qsquid:S1118":Add a private constructor to hide the implicit public one.(Óû ™
-rsquid:S1149@"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(’²ŞØúÿÿÿÿ
-‹squid:S1319@"oThe return type of this method should be an interface such as "Map" rather than the implementation "Hashtable".(’²ŞØúÿÿÿÿ
-‰squid:S1319x"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ùø…şÿÿÿÿ
-msquid:S1149y"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(Í«¥
-Ssquid:S2629R"7Use the built-in formatting to construct this argument.(Ÿ¿¾¢üÿÿÿÿ
-jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¶¥ã 
-zsquid:S14887"^Immediately return this expression instead of assigning it to the temporary variable "pduMsg".(§ÍÕŠÿÿÿÿÿ
-rsquid:S1149B"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(ö¬¾Şüÿÿÿÿ
-Fsquid:S2093F"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Nsquid:S2629+"7Use the built-in formatting to construct this argument.(¾´‰
+squid:S1319<"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ˆ·Ãæùÿÿÿÿ8Úò¼¼.
+`squid:UselessImportCheck"0Remove this unused import 'java.util.Hashtable'.(Œ»ÏÊüÿÿÿÿ8ª¬…¼¼.
+Usquid:S2629,"7Use the built-in formatting to construct this argument.(¾´‰8Úò¼¼.
+Tsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ğ¥Å8„Ó´¾¼.
+_squid:UselessImportCheck"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓ8„Ó´¾¼.
+squid:S1488="^Immediately return this expression instead of assigning it to the temporary variable "msgMap".(Ø™¥ñøÿÿÿÿ8Ù¢·¼¼.
+dsquid:UselessImportCheck"4Remove this unused import 'java.io.DataInputStream'.(”•úºÿÿÿÿÿ8„Ó´¾¼.
+¥squid:S1319<"The type of the "bytes" object should be an interface such as "ConcurrentMap" rather than the implementation "ConcurrentHashMap".(ˆ·Ãæùÿÿÿÿ8ö‚¼¼.
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¶¥ã 8Úò¼¼.
+_squid:S3457,"AFormat specifiers should be used instead of string concatenation.(¾´‰8Úò¼¼.
+Msquid:S1068"/Remove this unused "PACKET_SIZE" private field.(¶¥ã 8„Ó´¾¼.
+Xsquid:S1118":Add a private constructor to hide the implicit public one.(Óû ™8Ú¶¼¼.
+`squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8„Ó´¾¼.
+squid:S14888"^Immediately return this expression instead of assigning it to the temporary variable "pduMsg".(§ÍÕŠÿÿÿÿÿ8Úò¼¼.

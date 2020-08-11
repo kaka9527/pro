@@ -1,8 +1,8 @@
 package com.tin.it.mqtt.handler;
 
+import com.tin.it.mqtt.MqttMessageClient;
 import com.tin.it.mqtt.UpdateMessageUtil;
 import com.tin.it.thread.SleepUtils;
-import com.tin.it.util.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.messaging.Message;
@@ -10,6 +10,7 @@ import org.springframework.messaging.MessageHandler;
 import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.MessagingException;
 
+import javax.annotation.Resource;
 import java.util.concurrent.*;
 
 /**
@@ -19,7 +20,24 @@ public class RequestMessageArrivedHandler implements MessageHandler {
 
     private static final Logger logger = LoggerFactory.getLogger(RequestMessageArrivedHandler.class);
 
-    ExecutorService threadPool = new ThreadPoolExecutor(1,1,0, TimeUnit.MILLISECONDS,new SynchronousQueue<Runnable>(), Executors.defaultThreadFactory(),new ThreadPoolExecutor.AbortPolicy());
+    private ExecutorService subRequestExecutor;
+    private LinkedBlockingQueue   subRequestQueue;
+
+    @Resource
+    MqttMessageClient mqttMessageClient;
+
+    public RequestMessageArrivedHandler(){
+        int coreThreadNum = Runtime.getRuntime().availableProcessors();
+        this.subRequestQueue = new LinkedBlockingQueue(10000);
+        this.subRequestExecutor = new ThreadPoolExecutor(coreThreadNum * 2,
+                coreThreadNum * 2,
+                30000,
+                TimeUnit.MILLISECONDS,
+                subRequestQueue,
+                new ThreadFactoryImpl("SubRequestThread"),
+                new RejectHandler("subRequest", 10000));
+    }
+
 
     @Override
     public void handleMessage(Message<?> message) throws MessagingException {
@@ -29,11 +47,7 @@ public class RequestMessageArrivedHandler implements MessageHandler {
         logger.info(msg);
         String topic = headers.get("mqtt_receivedTopic").toString();
         // 更新软件包主题返回的消息
-        if(Constants.UPDATE_RESULT_TOPIC_NAME.equals(topic)){
-            if (Constants.RETRY_STATE) {
-                threadPool.submit(new MessageArrived(msg));
-            }
-        }
+        subRequestExecutor.submit(new MessageArrived(msg));
         logger.info(topic);
     }
 
@@ -46,18 +60,7 @@ public class RequestMessageArrivedHandler implements MessageHandler {
         public void run() {
             logger.info("-------retry start--------");
             try{
-                boolean bool = UpdateMessageUtil.retryStatus(this.message,1);
-                boolean state = UpdateMessageUtil.retryStatus(this.message, 2);
-                boolean rt = UpdateMessageUtil.retryStatus(this.message,3);
-                if(bool || state || rt){
-                    SleepUtils.second(5);
-                }
-                if(rt){
-                    // 重发bin数据包
-                    String packetTotal = UpdateMessageUtil.getRetryStr(this.message,12,16);
-                    String packet = UpdateMessageUtil.getRetryStr(this.message,16,20);
-                    logger.info(packetTotal+"==bin=="+packet);
-                }
+                logger.info(message);
             }catch (Exception e) {
                 logger.error(" error ",e);
             }

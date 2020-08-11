@@ -1,16 +1,9 @@
 package com.tin.it.mqtt;
 
-import com.tin.it.util.Constants;
 import com.tin.it.vo.MessageDLT;
 import com.tin.it.vo.MessageUpdate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.messaging.Message;
-
-import javax.jms.BytesMessage;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
 
 public class UpdateMessageUtil {
     private static final Logger logger = LoggerFactory.getLogger(UpdateMessageUtil.class);
@@ -56,10 +49,6 @@ public class UpdateMessageUtil {
             messageBean.setAuth(message.getAuth());
             messageBean.setDataStr(dataStr);
 
-            /*String dataSum = makeChecksum("68" + machineAddress + "68" + messageBean.getControl() + dataLong
-                    + messageBean.getDataTab() + packetTotal + packet + messageBean.getDataStr());
-            logger.info("dataSum=="+dataSum);
-            messageBean.setDatasum(dataSum);*/
             messageBean.setEndStr("16");
             // messageBean.getPassword() + messageBean.getAuth() +
             builder.append(messageBean.getStartFrame());
@@ -73,9 +62,6 @@ public class UpdateMessageUtil {
             builder.append(messageBean.getDataStr());
             //builder.append(messageBean.getDatasum());
             builder.append(messageBean.getEndStr());
-            /*sendmes = messageBean.getStartFrame() + messageBean.getMachineAddress() +
-                    messageBean.getStartFrame2() + messageBean.getControl() + messageBean.getDataLong() +
-                    messageBean.getDataTab() + packetTotal + packet +  messageBean.getDataStr() + messageBean.getEndStr();*/
 
         } catch (Exception e) {
             logger.error(e.getMessage());
@@ -85,8 +71,8 @@ public class UpdateMessageUtil {
     }
 
     //解析数据标 加33 倒序
-    private static String dataTohex(String dataID) {
-        int len = dataID.length();
+    private static String dataTohex(String dataId) {
+        int len = dataId.length();
         String send = null;
 
         try {
@@ -96,8 +82,8 @@ public class UpdateMessageUtil {
             int start = 2;
             int end = 0;
             for (int i = 0; i < len; i++) {
-                if (dataID.length() >= start) {
-                    String str = dataID.substring(dataID.length() - start, dataID.length() - end);
+                if (len >= start) {
+                    String str = dataId.substring(len - start, len - end);
                     x = Long.parseLong(str, 16);
                     String temp = String.valueOf(Long.toHexString(x + y));
                     send += temp.substring(temp.length() - 2, temp.length());//当ff+33时=132，取后两位
@@ -106,57 +92,29 @@ public class UpdateMessageUtil {
                 }
             }
         } catch (NumberFormatException e) {
-            e.printStackTrace();
+            logger.error(" dataTohex error ",e);
         }
 
         return send;
     }
 
-    //16进制累加和
-    private static String makeChecksum(String data) {
-        if (data == null || data.equals("")) {
-            return "";
-        }
-        int total = 0;
-        int len = data.length();
-        int num = 0;
-        int x = 0;
-        String s = "";
-        while (num < len) {
-            x = num + 2;
-            if(x > len){
-                s = data.substring(num);
-            }else {
-                s = data.substring(num, x);
-            }
-            total += Integer.parseInt(s, 16);
-            num = num + 2;
-        }
-        /**
-         * 用256求余最大是255，即16进制的FF
-         */
-        int mod = total % 256;
-        String hex = Integer.toHexString(mod);
-        len = hex.length();
-        // 如果不够校验位的长度，补0,这里用的是两位校验
-        if (len < 2) {
-            hex = "0" + hex;
-        }
-        return hex;
-    }
-
+    /**
+     * 左边补0
+     * @param str
+     * @param strLength
+     * @return
+     */
     public static String addZeroForNumLeft(String str, int strLength) {
         int strLen = str.length();
-        if (strLen < strLength) {
-            while (strLen < strLength) {
-                StringBuffer sb = new StringBuffer();
-                sb.append("0").append(str);//左补0
-                str = sb.toString();
-                strLen = str.length();
-            }
+        StringBuilder builder = new StringBuilder();
+        int i = 0;
+        int len = strLength - strLen;
+        while (i < len) {
+            builder.append("0");
+            i++;
         }
-
-        return str;
+        builder.append(str);
+        return String.valueOf(builder);
     }
 
     //组合设备地址 倒序
@@ -164,31 +122,30 @@ public class UpdateMessageUtil {
         String addressHex = "";
         int start = 2;
         int end = 0;
+        int len = address.length();
         for (int i = 0; i < 6; i++) {
-            if (address.length() >= start) {
-                String str = address.substring(address.length() - start, address.length() - end);
+            if ( len >= start) {
+                String str = address.substring(len - start, len - end);
                 addressHex += str;
                 start += 2;
                 end += 2;
             }
         }
 
-        addressHex = addZeroForNumFRight(addressHex, 12);
+        addressHex = addZeroForNumRight(addressHex, 12);
         return addressHex;
     }
 
-    private static String addZeroForNumFRight(String str, int strLength) {
+    private static String addZeroForNumRight(String str, int strLength) {
         int strLen = str.length();
-        if (strLen < strLength) {
-            while (strLen < strLength) {
-                StringBuffer sb = new StringBuffer();
-                sb.append(str).append("0");//右补0
-                str = sb.toString();
-                strLen = str.length();
-            }
+        StringBuilder builder = new StringBuilder();
+        int i = 0;
+        int len = strLength - strLen;
+        while (i < len) {
+            builder.append("0");
+            i++;
         }
-
-        return str;
+        return str + String.valueOf(builder);
     }
 
     /**
@@ -207,55 +164,8 @@ public class UpdateMessageUtil {
             }
         }
 
-        addressHex = addZeroForNumFRight(addressHex, 4);
+        addressHex = addZeroForNumRight(addressHex, 4);
         return addressHex;
-    }
-
-    /**
-     * 发送更新数据包
-     * @param dataMessage
-     */
-    private void sendDataMessage(HashMap<String, String> dataMessage){
-        Iterator<Map.Entry<String, String>> entries = dataMessage.entrySet().iterator();
-        while (entries.hasNext()) {
-            Map.Entry<String, String> entry = entries.next();
-            try {
-
-                // 发送报文
-                //Message replyMsg = jmsTemplate.sendAndReceive(Constants.UPDATE_TOPIC_NAME,messageCreator);
-                //logger.info(replyMsg.toString());
-                //retrySendMessage(replyMsg);
-            } catch (Exception e) {
-                logger.error("key is "+entry.getKey() + " on error.",e);
-                continue;
-            }
-        }
-    }
-
-    /**
-     * 重发消息
-     * @param replyMsg
-     */
-    private void retrySendMessage(Message replyMsg){
-        // ACK：成功  NCK：重发
-        if(null != replyMsg && replyMsg instanceof BytesMessage){
-            try {
-                BytesMessage message = (BytesMessage)replyMsg;
-                byte[] bt = new byte[(int) message.getBodyLength()];
-                String rtMsg = new String(bt);
-                logger.info("rtMsg=="+rtMsg);
-                boolean rt = retryStatus(rtMsg,3);
-                if(rt){
-                    // 重发bin数据包
-                    String packetTotal = getRetryStr(rtMsg,12,16);
-                    String packet = getRetryStr(rtMsg,16,20);
-                    logger.info(packetTotal+"==bin=="+packet);
-                }
-            } catch (Exception e) {
-                logger.error("bin 数据包重发错误",e);
-            }
-        }
-
     }
 
     /**

@@ -1,5 +1,8 @@
 package com.tin.it.util;
 
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -11,6 +14,8 @@ public class Constants {
 
     // 存放bin文件的目录
     public static final String BIN_FILE_DIR = "D:/upload/";
+
+    public static final String BIN_FILE_NAME = "Project.bin";
     // 网关主题
     public static final String GATEWAY_TOPIC_NAME = "queue.chuangkou.gateway";
     // 设备更新主题
@@ -21,7 +26,7 @@ public class Constants {
 
     // 更新数据包返回主题
     //public static final String UPDATE_RESULT_TOPIC_NAME = "queue.chuangkou.updateResult/#";
-    public static final String UPDATE_RESULT_TOPIC_NAME = "/chuangkou/updateResult/#";
+    public static final String UPDATE_RESULT_TOPIC_NAME = "chuangkou/updateResult/#";
 
     // 消息类型
     public static final String MSG_TYPE_CHECK = "check";
@@ -31,15 +36,15 @@ public class Constants {
     //
     public static volatile boolean RETRY_STATE = false;
 
-    public static final String TOPIC_PLATFORM_REQUEST = "chuangkou/platform/request/#";
+    public static final String TOPIC_PLATFORM_REQUEST = "platform/request/+";
 
-    public static final String TOPIC_PLATFORM_RESPONSE = "chuangkou/platform/response/";
+    public static final String TOPIC_PLATFORM_RESPONSE = "platform/response/";
 
-    public static final String TOPIC_PLATFORM_DATA = "chuangkou/platform/data/";
+    public static final String TOPIC_PLATFORM_DATA = "platform/data/";
 
-    public static final String TOPIC_GATEWAY_REQUEST = "chuangkou/gateway/request/";
+    public static final String TOPIC_GATEWAY_REQUEST = "gateway/request/";
 
-    public static final String TOPIC_GATEWAY_RESPONSE = "chuangkou/gateway/response/#";
+    public static final String TOPIC_GATEWAY_RESPONSE = "gateway/response/+";
 
-    public static final String TOPIC_GATEWAY_DATA = "chuangkou/gateway/data/#";
+    public static final String TOPIC_GATEWAY_DATA = "gateway/data/+";
 }

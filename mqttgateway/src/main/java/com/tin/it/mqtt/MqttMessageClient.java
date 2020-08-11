@@ -27,4 +27,11 @@ public class MqttMessageClient extends MqttPahoMessageHandler {
         Message<String> message = messageBuilder.build();
         this.handleMessage(message);
     }
+
+    public void sendMessage(String topic,byte[] bytes){
+        MessageBuilder<byte[]> builder = MessageBuilder.withPayload(bytes);
+        builder.setHeader(MqttHeaders.TOPIC,topic);
+        Message<byte[]> message = builder.build();
+        this.handleMessage(message);
+    }
 }

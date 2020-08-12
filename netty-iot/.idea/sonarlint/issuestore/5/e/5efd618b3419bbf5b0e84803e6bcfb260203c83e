@@ -1,0 +1,6 @@
+
+8squid:S16436"Use a StringBuilder instead.(Ö³¦¹ùÿÿÿÿ
+8squid:S16438"Use a StringBuilder instead.(ÀÚ¥ıÿÿÿÿ
+3squid:S1643;"Use a StringBuilder instead.(ø¾±»
+isquid:S3776'"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ËÆ‰ß
+usquid:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(­ÆÇ÷şÿÿÿÿ

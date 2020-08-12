@@ -1,0 +1,3 @@
+
+½%squid:RedundantThrowsDeclarationCheck"‹Remove the declaration of thrown exception 'org.springframework.data.redis.serializer.SerializationException' which is a runtime exception.(üÎ¤î
+Â%squid:RedundantThrowsDeclarationCheck"‹Remove the declaration of thrown exception 'org.springframework.data.redis.serializer.SerializationException' which is a runtime exception.(þÅö¾ýÿÿÿÿ

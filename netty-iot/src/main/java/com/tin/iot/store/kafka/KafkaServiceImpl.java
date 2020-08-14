@@ -4,6 +4,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.tin.iot.common.message.GrozaKafkaService;
 import com.tin.iot.internal.InternalMessage;
+import com.tin.iot.protocol.Connect;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
@@ -14,6 +17,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class KafkaServiceImpl implements GrozaKafkaService {
+    private static final Logger log = LoggerFactory.getLogger(KafkaServiceImpl.class);
 
     @Autowired
     private KafkaTemplate kafkaTemplate;
@@ -22,6 +26,7 @@ public class KafkaServiceImpl implements GrozaKafkaService {
 
     @Override
     public void send(InternalMessage internalMessage){
-        kafkaTemplate.send(internalMessage.getTopic(),gson.toJson(internalMessage));
+        log.info("send: "+internalMessage);
+        //kafkaTemplate.send(internalMessage.getTopic(),gson.toJson(internalMessage));
     }
 }

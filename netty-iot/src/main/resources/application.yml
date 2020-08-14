@@ -40,9 +40,9 @@ mqtt:
   # Enable/disable mqtt transport protocol.
   enabled: true
   bind_address: 192.168.10.80
-  bind_port: 8899
+  bind_port: 1883
   adaptor: JsonMqttAdaptor
-  timeout: 10000
+  timeout: 30000
   netty:
     leak_detector_level: DISABLED
     boss_group_thread_count: 1

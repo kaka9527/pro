@@ -10,6 +10,8 @@ import io.netty.handler.codec.mqtt.*;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 import io.netty.util.AttributeKey;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
@@ -23,6 +25,7 @@ public class MqttTransportHandler extends SimpleChannelInboundHandler<MqttMessag
 
     private ProtocolProcess protocolProcess;
 
+    private static final Logger log = LoggerFactory.getLogger(MqttTransportHandler.class);
 
     public MqttTransportHandler(ProtocolProcess protocolProcess) {
         this.protocolProcess = protocolProcess;
@@ -31,6 +34,7 @@ public class MqttTransportHandler extends SimpleChannelInboundHandler<MqttMessag
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, MqttMessage msg) throws Exception {
         if (msg.decoderResult().isFailure()) {
+            log.info("msg1: "+msg);
             Throwable cause = msg.decoderResult().cause();
             if (cause instanceof MqttUnacceptableProtocolVersionException) {
                 ctx.writeAndFlush(MqttMessageFactory.newMessage(
@@ -45,6 +49,17 @@ public class MqttTransportHandler extends SimpleChannelInboundHandler<MqttMessag
             }
             ctx.close();
             return;
+        }
+
+        if(msg != null){
+            log.info("fixedHeader: "+msg.fixedHeader().toString());
+            if(msg.variableHeader() != null){
+                log.info("variableHeader: "+msg.variableHeader().toString());
+            }
+            if(msg.payload() != null){
+                log.info("payload: "+msg.payload().toString());
+            }
+            log.info("msg: "+msg.toString());
         }
 
         switch (msg.fixedHeader().messageType()) {

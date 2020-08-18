@@ -8,6 +8,8 @@ import com.tin.it.vo.MessageDLT;
  */
 public class MessageStringDLTUtils {
 
+    private static String msg = "{startFrame0}{addressDomain}{startFrame1}{controlCode}{dataLength}{dataIdentifiers}{dataDomain}{checkCode}{endFrame}";
+
     /**
      * 主站读报文组合、写报文组合
      */
@@ -71,10 +73,21 @@ public class MessageStringDLTUtils {
                 messageBean.setDatasum(datesum);
                 messageBean.setEndStr("16");
 
-                sendmes = messageBean.getStartFrame() + messageBean.getMachineAddress() +
-                        messageBean.getStartFrame2() + messageBean.getControl() + messageBean.getDataLong() +
-                        messageBean.getDataTab() + messageBean.getPassword() + messageBean.getAuth() + messageBean.getDataStr() +
-                        messageBean.getDatasum() + messageBean.getEndStr();
+                //
+                sendmes = msg.replace("{startFrame0}", messageBean.getStartFrame())
+                        .replace("{addressDomain}", messageBean.getMachineAddress())
+                        .replace("{startFrame1}", messageBean.getStartFrame2())
+                        .replace("{controlCode}", messageBean.getControl())
+                        .replace("{dataLength}", messageBean.getDataLong())
+                        .replace("{dataIdentifiers}", messageBean.getDataTab())
+                        .replace("{dataDomain}", messageBean.getPassword() + messageBean.getAuth() + messageBean.getDataStr())
+                        .replace("{checkCode}", messageBean.getDatasum())
+                        .replace("{endFrame}", messageBean.getEndStr());
+
+//                sendmes = messageBean.getStartFrame() + messageBean.getMachineAddress() +
+//                        messageBean.getStartFrame2() + messageBean.getControl() + messageBean.getDataLong() +
+//                        messageBean.getDataTab() + messageBean.getPassword() + messageBean.getAuth() + messageBean.getDataStr() +
+//                        messageBean.getDatasum() + messageBean.getEndStr();
 
             }
 

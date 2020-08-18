@@ -2,6 +2,7 @@ package com.tin.it.mqtt.handler;
 
 import com.tin.it.mqtt.MqttMessageClient;
 import com.tin.it.thread.JobPduDateTimeSetThread;
+import com.tin.it.thread.PduDateSettingTask;
 import com.tin.it.util.ControlCode;
 import com.tin.it.util.PacketUtil;
 import org.slf4j.Logger;
@@ -57,16 +58,15 @@ public class DataMessageArrivedHandler implements MessageHandler {
         String controlCode = PacketUtil.getControlCode(message);
         // 设备ID
         String deviceCode = PacketUtil.getDeviceCode(message);
+        // 从站上线请求校时
         if(ControlCode.CODE_88.equals(controlCode)) {
             try {
                 // 缺少数据标判断
-                // 发送校时报文
-                subDataExecutor.submit(new JobPduDateTimeSetThread(mqttMessageClient, deviceCode)).get();
+                // 发送校时 日期报文
+                subDataExecutor.submit(new PduDateSettingTask(mqttMessageClient, deviceCode)).get();
             } catch (Exception e) {
-                logger.error(" JobPduDateTimeSetThread error ",e);
+                logger.error(" PduDateSettingTask error ",e);
             }
-        }else if(ControlCode.CODE_94.equals(controlCode)){
-            // 设备上报的其他数据
         }
     }
 }

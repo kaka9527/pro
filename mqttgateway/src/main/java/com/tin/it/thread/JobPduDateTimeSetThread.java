@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- * @Description:校时广播报文
+ * 校时报文
  */
 public class JobPduDateTimeSetThread implements Runnable {
 
@@ -71,7 +71,7 @@ public class JobPduDateTimeSetThread implements Runnable {
             logger.info("发送日期报文时间===" + formatter.format(LocalDateTime.now()) +" "+ datahex);
             //重新发送报文
             writeMsgToClient(datahex);
-            //设置时间数据标
+            /*//设置时间数据标
             String datetimeTab = "04000102";
             //时间校时数据
             String datatime = hourhex + minutehex + secondhex;
@@ -94,6 +94,7 @@ public class JobPduDateTimeSetThread implements Runnable {
 
             logger.info("发送时间报文===" + formatter.format(LocalDateTime.now()) +" "+ datatiemhex);
             writeMsgToClient(datatiemhex);//重新发送时间报文
+            */
         } catch (Exception e) {
             logger.error(" 校时报文发送失败 ",e);
         }

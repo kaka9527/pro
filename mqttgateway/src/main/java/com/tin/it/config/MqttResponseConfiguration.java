@@ -3,8 +3,11 @@ package com.tin.it.config;
 import com.tin.it.mqtt.MqttMessageClient;
 import com.tin.it.mqtt.handler.ResponseMessageArrivedHandler;
 import com.tin.it.util.Constants;
+import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttTopic;
+import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -33,6 +36,29 @@ public class MqttResponseConfiguration {
     @Resource
     private MqttProperties mqttProperties;
 
+    public MqttConnectOptions mqttConnectOptions() {
+
+        MqttConnectOptions connectOptions = new MqttConnectOptions();
+        String username = mqttProperties.getUsername();
+        String password = mqttProperties.getPassword();
+        if(username != null) {
+            connectOptions.setUserName(username);
+        }
+        if (password != null) {
+            connectOptions.setPassword(password.toCharArray());
+        }
+        String[] serverURIs = mqttProperties.getServerURIs();
+        if (serverURIs == null || serverURIs.length == 0) {
+            logger.error("serverURIs can not be null",new NullPointerException());
+        }
+        connectOptions.setCleanSession(mqttProperties.getCleanSession());
+        connectOptions.setKeepAliveInterval(mqttProperties.getKeepAliveInterval());
+        connectOptions.setServerURIs(serverURIs);
+        connectOptions.setMaxInflight(1000);
+
+        return connectOptions;
+    }
+
     @Bean
     public DefaultMqttPahoClientFactory responseClientFactory() {
 
@@ -55,8 +81,7 @@ public class MqttResponseConfiguration {
         connectOptions.setMaxInflight(1000);
 
         DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory();
-        factory.setConnectionOptions(connectOptions);
-
+        factory.setConnectionOptions(mqttConnectOptions());
         return factory;
     }
 

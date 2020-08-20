@@ -33,14 +33,22 @@ public class Constants {
     public static final String MSG_TYPE_REQUEST = "request";
     public static final String MSG_TYPE_UPDATE = "update";
 
+    /**
+     * qos 标识
+     * 0	最多分发一次
+     * 1	至少分发一次
+     * 2	只分发一次
+     */
+    public static final int QOS_IDENTITY = 0;
+
     //
     public static volatile boolean RETRY_STATE = false;
 
     public static final String TOPIC_PLATFORM_REQUEST = "platform/request/+";
 
-    public static final String TOPIC_PLATFORM_RESPONSE = "platform/response/";
+    public static final String TOPIC_PLATFORM_RESPONSE = "platform/response/cmd";
 
-    public static final String TOPIC_PLATFORM_DATA = "platform/data/";
+    public static final String TOPIC_PLATFORM_DATA = "platform/data/cmd";
 
     public static final String TOPIC_GATEWAY_REQUEST = "gateway/request/";
 

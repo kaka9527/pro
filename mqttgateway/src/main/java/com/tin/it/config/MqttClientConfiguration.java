@@ -4,6 +4,7 @@ import com.tin.it.mqtt.handler.DataMessageListener;
 import com.tin.it.util.Constants;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.eclipse.paho.client.mqttv3.MqttTopic;
 import org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import org.slf4j.Logger;
@@ -40,7 +41,7 @@ public class MqttClientConfiguration {
             logger.error("serverURIs can not be null",new NullPointerException());
         }
 
-        Properties sslClientProps = new Properties();
+//        Properties sslClientProps = new Properties();
 //        sslClientProps.setProperty(SSLSocketFactoryFactory.SSLPROTOCOL, mqttProperties.getProtocol());
 //        sslClientProps.setProperty(SSLSocketFactoryFactory.KEYSTORE, mqttProperties.getKeyStore());
 //        sslClientProps.setProperty(SSLSocketFactoryFactory.KEYSTOREPWD, mqttProperties.getKeyStorePassword());
@@ -48,7 +49,7 @@ public class MqttClientConfiguration {
 //        sslClientProps.setProperty(SSLSocketFactoryFactory.TRUSTSTORE, mqttProperties.getTrustStore());
 //        sslClientProps.setProperty(SSLSocketFactoryFactory.TRUSTSTOREPWD, mqttProperties.getTrustStorePassword());
 //        sslClientProps.setProperty(SSLSocketFactoryFactory.TRUSTSTORETYPE, mqttProperties.getTrustStoreType());
-        connectOptions.setSSLProperties(sslClientProps);
+//        connectOptions.setSSLProperties(sslClientProps);
 
         connectOptions.setCleanSession(mqttProperties.getCleanSession());
         connectOptions.setKeepAliveInterval(mqttProperties.getKeepAliveInterval());
@@ -65,8 +66,9 @@ public class MqttClientConfiguration {
         MqttClient mqttClient = null;
         try {
             mqttClient = new MqttClient(serverURIs[0],mqttProperties.getClientId()+"_mqttClient",persistence);
+            MqttTopic.validate(Constants.TOPIC_GATEWAY_DATA,true);
             mqttClient.connect(mqttConnectOptions());
-            mqttClient.subscribe(Constants.TOPIC_PLATFORM_REQUEST,new DataMessageListener());
+            mqttClient.subscribe(Constants.TOPIC_GATEWAY_DATA,Constants.QOS_IDENTITY,new DataMessageListener());
         } catch (Exception e) {
             logger.error(" mqttClient error: ",e);
         }

@@ -82,7 +82,7 @@ public class MqttRequestConfiguration {
         MqttTopic.validate(Constants.TOPIC_PLATFORM_REQUEST,true);
         adapter.setCompletionTimeout(mqttProperties.getCompletionTimeout());
         adapter.setConverter(new DefaultPahoMessageConverter());
-        adapter.setQos(1);
+        adapter.setQos(Constants.QOS_IDENTITY);
         adapter.setOutputChannel(mqttRequestInputChannel());
         return adapter;
     }

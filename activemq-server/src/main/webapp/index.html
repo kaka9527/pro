@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>测试发送报文</title>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <script src="./layui/layui.js"></script>
+    <script type="text/javascript">
+        function submitForm() {
+
+        }
+    </script>
+</head>
+<body>
+    <form class="layui-form" style="margin: 20px;" action="" method="post">
+        <div class="layui-form-item">
+            <label class="layui-form-label">设备编号</label>
+            <div cass="layui-input-inline">
+                <input type="text" autocomplete="off" name="moduleId" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">报文</label>
+            <div cass="layui-input-inline">
+                <input type="text" autocomplete="off" name="msg" class="layui-input"/>
+            </div>
+        </div>
+        <button type="button" class="layui-btn layui-btn-primary" id="uploadBin"><i class="layui-icon"></i>上传文件</button>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">send</button>
+                <button type="reset" class="layui-btn layui-btn-primary">reset</button>
+            </div>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        layui.use(['form', 'layer','upload'], function(){
+            var form = layui.form
+                ,upload = layui.upload
+                ,layer = layui.layer;
+            $ = layui.jquery;
+
+            // 上传更新文件
+            upload.render({
+                elem: '#uploadBin'
+                //,url: '/pdu/msg/upload'
+                ,accept: 'file'
+                ,exts: 'bin' //只允许上传压缩文件
+                ,size:500 // 文件大小
+                ,done: function(res){
+                    layer.msg('上传成功');
+                    console.log(res)
+                }
+            });
+
+            //监听提交
+            form.on('submit(demo1)', function(data){
+                $.ajax({
+                    //url:'/pdu/msg/send',
+                    url:'/pdu/msg/upload',
+                    type:'POST',
+                    data:data.field,
+                    dataType:'JSON',
+                    success:function(res){
+                        if(res.code='0'){
+                            alert("ok");
+                        }
+                        else{
+                            alert("error");
+                        }
+                    },
+                    error:function (data) {
+                        console.error(data);
+                    }
+                });
+                return false;        
+            });
+
+        });
+    </script>
+</body>
+</html>

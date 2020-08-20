@@ -1,0 +1,8 @@
+
+isquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(‚Ê¸¢8Ž°¯·.
+nsquid:CommentedOutCodeLine3"<This block of commented-out lines of code should be removed.(æÅˆ“þÿÿÿÿ8‘…î ·.
+Isquid:S1452O"&Remove usage of generic wildcard type.( ±¡õúÿÿÿÿ8áò¯·.
+isquid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(ÚÅþÞ8ÊÍú«µ.
+©%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ùÀÈ³ûÿÿÿÿ8Ü¶Ù¢·.
+nsquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(ÙÇÑÇùÿÿÿÿ8ò€•ù¶.
+jsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ùÀÈ³ûÿÿÿÿ8Ü¶Ù¢·.

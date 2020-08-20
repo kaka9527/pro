@@ -1,0 +1,19 @@
+
+isquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(‰ŸÕÑ8™ÑÞÎ¹.
+Tsquid:S1068"6Remove this unused "DEFAULT_EXPIRATION" private field.(óß³°8¼ö³¹».
+Ksquid:S11852"(Remove this method to simply inherit it.(ñæ•½ùÿÿÿÿ8¹ þ”º.
+`squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8§ê«Ø½.
+]squid:S1854g"@Remove this useless assignment to local variable "physicalName".(·ÚªE8Ò…ï•º.
+nsquid:CommentedOutCodeLiner"<This block of commented-out lines of code should be removed.(¾ÜßÜþÿÿÿÿ8¡–¢’».
+isquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(ðþð8íõµØ½.
+Ksquid:S1185?"(Remove this method to simply inherit it.(—„æ«øÿÿÿÿ8ƒºë•º.
+Zsquid:S1854i"7Remove this useless assignment to local variable "msg".(ÒŒ’üúÿÿÿÿ8‰€¢’».
+Usquid:S1068"7Remove this unused "DEFAULT_PURGE_COUNT" private field.(ã‰¿ô8íõµØ½.
+nsquid:CommentedOutCodeLine3"<This block of commented-out lines of code should be removed.(¼ùÛÅúÿÿÿÿ8¹ þ”º.
+nsquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8™ÑÞÎ¹.
+Ksquid:S1481i"(Remove this unused "msg" local variable.(ÒŒ’üúÿÿÿÿ8‰€¢’».
+isquid:CommentedOutCodeLinep"<This block of commented-out lines of code should be removed.(Þá¼Î8‰€¢’».
+dsquid:S2184"FCast one of the operands of this multiplication operation to a "long".(óß³°8ýØÔ£·.
+osquid:UselessImportCheck"DRemove this unused import 'org.apache.activemq.broker.region.Queue'.(Ì‰îç8ÙÜŽØ½.
+Ksquid:S1185-"(Remove this method to simply inherit it.(¤ðÌ›þÿÿÿÿ8«¹¤œº.
+Nsquid:S1481g"1Remove this unused "physicalName" local variable.(·ÚªE8Ò…ï•º.

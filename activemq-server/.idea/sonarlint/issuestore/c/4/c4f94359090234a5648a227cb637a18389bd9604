@@ -1,0 +1,28 @@
+
+dsquid:UselessImportCheck"4Remove this unused import 'java.io.DataInputStream'.(”•úºÿÿÿÿÿ8Í¾¸ÿ·.
+[
+squid:S106<"9Replace this use of System.out or System.err by a logger.(§›»§úÿÿÿÿ8‹õáÿ·.
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¶¥ã 
+Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Map'.(¼è½Òþÿÿÿÿ8¶¬ý·.
+^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8¶¬ý·.
+Tsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ð¥Å8Í¾¸ÿ·.
+V
+squid:S1062"9Replace this use of System.out or System.err by a logger.(„ÉòÔ8ÄñÖÿ·.
+V
+squid:S106B"9Replace this use of System.out or System.err by a logger.(µ†Öý8úâ»ÿ·.
+\squid:UselessImportCheck"1Remove this unused import 'java.math.BigInteger'.(»Çâ€8Í¾¸ÿ·.
+_squid:UselessImportCheck	"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓ8Í¾¸ÿ·.
+_squid:S1075"ARefactor your code to get this URI from a customizable parameter.(‘´’8¨¤¼õ·.
+Msquid:S1068"/Remove this unused "PACKET_SIZE" private field.(¶¥ã 8Í¾¸ÿ·.
+Zsquid:UselessImportCheck"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8¶¬ý·.
+^squid:UselessImportCheck"3Remove this unused import 'javax.jms.BytesMessage'.(Ìø×ø8Öš¨ý·.
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ôøì©ÿÿÿÿÿ8îîéÿ·.
+[
+squid:S106A"9Replace this use of System.out or System.err by a logger.(˜£ƒýÿÿÿÿ8úâ»ÿ·.
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÑÜºÛ8Ðêÿ·.
+Jsquid:S1068",Remove this unused "filePath" private field.(‘´’8Í¾¸ÿ·.
+Jsquid:S1068"'Remove this unused "LOG" private field.(Â°íèþÿÿÿÿ8Í¾¸ÿ·.
+[
+squid:S106("9Replace this use of System.out or System.err by a logger.(“Ðâàýÿÿÿÿ8¼‘Òÿ·.
+`squid:UselessImportCheck
+"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8Í¾¸ÿ·.

@@ -1,0 +1,30 @@
+
+_squid:S1192C"HDefine a constant instead of duplicating this literal " ******" 5 times.(˜Ø·»
+?squid:S1148I"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?squid:S1148m"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148 "#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148²"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Tsquid:S1854<"=Remove this useless assignment to local variable "jobDetail".(Ç¬±š
+Ysquid:S1854b"=Remove this useless assignment to local variable "scheduler".(¹ı»ûÿÿÿÿ
+Zsquid:S1854ˆ"=Remove this useless assignment to local variable "scheduler".(¹ı»ûÿÿÿÿ
+Zsquid:S1854š"=Remove this useless assignment to local variable "scheduler".(¹ı»ûÿÿÿÿ
+Zsquid:S1854¬"=Remove this useless assignment to local variable "scheduler".(¹ı»ûÿÿÿÿ
+Esquid:S1481<".Remove this unused "jobDetail" local variable.(Ç¬±š
+Jsquid:S1481b".Remove this unused "scheduler" local variable.(¹ı»ûÿÿÿÿ
+Ksquid:S1481ˆ".Remove this unused "scheduler" local variable.(¹ı»ûÿÿÿÿ
+Ksquid:S1481š".Remove this unused "scheduler" local variable.(¹ı»ûÿÿÿÿ
+Ksquid:S1481¬".Remove this unused "scheduler" local variable.(¹ı»ûÿÿÿÿ
+Vsquid:S1068":Remove this unused "DEFAULT_JOB_GROUP_NAME" private field.(Î¼‘ÿúÿÿÿÿ
+Zsquid:S1068">Remove this unused "DEFAULT_TRIGGER_GROUP_NAME" private field.(Ş©£ûÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(·µÇØùÿÿÿÿ
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(İµÖÖ
+gsquid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(İ„óâùÿÿÿÿ
+bsquid:CommentedOutCodeLineA"<This block of commented-out lines of code should be removed.(ß¹ÿù
+bsquid:CommentedOutCodeLinee"<This block of commented-out lines of code should be removed.(¶›æ˜
+bsquid:CommentedOutCodeLineg"<This block of commented-out lines of code should be removed.(‡ã§¾
+bsquid:CommentedOutCodeLinei"<This block of commented-out lines of code should be removed.(­¸©¨
+bsquid:CommentedOutCodeLinex"<This block of commented-out lines of code should be removed.(İµÖÖ
+hsquid:CommentedOutCodeLineŠ"<This block of commented-out lines of code should be removed.(ÍÛ—¨ÿÿÿÿÿ
+hsquid:CommentedOutCodeLineœ"<This block of commented-out lines of code should be removed.(ø¥œ‘üÿÿÿÿ
+hsquid:CommentedOutCodeLine®"<This block of commented-out lines of code should be removed.(™ãÚşşÿÿÿÿ

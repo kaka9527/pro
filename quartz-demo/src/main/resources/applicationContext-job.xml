@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd"
+       default-autowire="byName" default-lazy-init="true">
+
+    <bean id="testJob" class="com.tin.JobTest"></bean>
+    <!-- 定义调用对象和调用对象的方法 -->
+    <bean id="testTask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <!-- 调用的类 -->
+        <property name="targetObject">
+            <ref bean="testJob"/>
+        </property>
+        <!-- 调用类中的方法 -->
+        <property name="targetMethod">
+            <value>work</value>
+        </property>
+    </bean>
+    <!-- 调度触发器 -->
+    <bean id="jibDoTime" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="testTask"/>
+        </property>
+        <!-- cron表达式 -->
+        <property name="cronExpression">
+            <value>0 0/1 * * * ?</value>
+        </property>
+    </bean>
+    <!-- 调度工厂  如果将lazy-init='false'那么容器启动就会执行调度程序 -->
+    <bean id="startQuertz" lazy-init="false" autowire="no"
+          class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="jibDoTime"/>
+            </list>
+        </property>
+        <!--必须的设置 QuartzScheduler 延时启动，应用启动完后 QuartzScheduler 再启动 -->
+        <property name="startupDelay" value="5"/>
+    </bean>
+    <!-- 配置任务并发执行线程池 -->
+    <bean id="executor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <property name="corePoolSize" value="3"/>
+        <property name="maxPoolSize" value="5"/>
+        <property name="queueCapacity" value="10"/>
+    </bean>
+</beans>

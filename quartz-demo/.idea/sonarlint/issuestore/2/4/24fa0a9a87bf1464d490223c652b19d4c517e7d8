@@ -1,0 +1,57 @@
+
+lsquid:S1450"URemove the "logger" field and declare it as a local variable in the relevant methods.(íÌ†„
+Zsquid:S3752">Add a "method" parameter to this "@RequestMapping" annotation.(¿©á‘úÿÿÿÿ
+Zsquid:S3752">Add a "method" parameter to this "@RequestMapping" annotation.(ÓÁ¥Ïûÿÿÿÿ
+Usquid:S37521">Add a "method" parameter to this "@RequestMapping" annotation.(¨ØÎ£
+Usquid:S3752X">Add a "method" parameter to this "@RequestMapping" annotation.(¥Àó™
+Rsquid:S1854<";Remove this useless assignment to local variable "jobDesc".(ÈâÈž
+\squid:S1854;"@Remove this useless assignment to local variable "runOnHoliday".(Ï¥úÃþÿÿÿÿ
+^squid:S1854:"BRemove this useless assignment to local variable "cronExpression".(®®Ü£ùÿÿÿÿ
+_squid:S18549"CRemove this useless assignment to local variable "targetClassName".(ñÞÒ‹þÿÿÿÿ
+Rsquid:S18548";Remove this useless assignment to local variable "jobName".(Š„Ô¿
+asquid:S44886"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ú¿Ìã
+Tsquid:S1854g"8Remove this useless assignment to local variable "date".(”Ç©šùÿÿÿÿ
+Rsquid:S1854e";Remove this useless assignment to local variable "jobDesc".(ÈâÈž
+\squid:S1854d"@Remove this useless assignment to local variable "runOnHoliday".(Ï¥úÃþÿÿÿÿ
+^squid:S1854c"BRemove this useless assignment to local variable "cronExpression".(®®Ü£ùÿÿÿÿ
+Psquid:S1854b"9Remove this useless assignment to local variable "jobId".(»ë°Ý
+asquid:S4488`"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Šµ†Í
+asquid:S4488~"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(»²õé
+bsquid:S4488‘"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ˆ€¡¾
+bsquid:S4488¦"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ì¯‘¢
+gsquid:S4488®"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(˜•Ëýÿÿÿÿ
+bsquid:S4488µ"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(‚Šê×
+gsquid:S4488À"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(»Ôô´ÿÿÿÿÿ
+Csquid:S14818",Remove this unused "jobName" local variable.(Š„Ô¿
+Psquid:S14819"4Remove this unused "targetClassName" local variable.(ñÞÒ‹þÿÿÿÿ
+Osquid:S1481:"3Remove this unused "cronExpression" local variable.(®®Ü£ùÿÿÿÿ
+Msquid:S1481;"1Remove this unused "runOnHoliday" local variable.(Ï¥úÃþÿÿÿÿ
+Csquid:S1481<",Remove this unused "jobDesc" local variable.(ÈâÈž
+Asquid:S1481b"*Remove this unused "jobId" local variable.(»ë°Ý
+Osquid:S1481c"3Remove this unused "cronExpression" local variable.(®®Ü£ùÿÿÿÿ
+Msquid:S1481d"1Remove this unused "runOnHoliday" local variable.(Ï¥úÃþÿÿÿÿ
+Csquid:S1481e",Remove this unused "jobDesc" local variable.(ÈâÈž
+Esquid:S1481g")Remove this unused "date" local variable.(”Ç©šùÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(™—ü¸øÿÿÿÿ
+gsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(…Šœûÿÿÿÿ
+bsquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(¹Í‹“
+gsquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(¯µ™úÿÿÿÿ
+gsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(É÷´þÿÿÿÿ
+bsquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(ÃÞÆ†
+gsquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(ÇõÓ±ùÿÿÿÿ
+bsquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(°ÓÚ
+bsquid:CommentedOutCodeLine["<This block of commented-out lines of code should be removed.(¢ý¬ñ
+bsquid:CommentedOutCodeLineh"<This block of commented-out lines of code should be removed.(¤“Ü·
+bsquid:CommentedOutCodeLinek"<This block of commented-out lines of code should be removed.(¢ý¬ñ
+bsquid:CommentedOutCodeLinem"<This block of commented-out lines of code should be removed.(›Ú
+bsquid:CommentedOutCodeLine{"<This block of commented-out lines of code should be removed.(ÐµÈÝ
+csquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÃÞÆ†
+csquid:CommentedOutCodeLine…"<This block of commented-out lines of code should be removed.(¢ý¬ñ
+csquid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(å…Â¢
+csquid:CommentedOutCodeLine‹"<This block of commented-out lines of code should be removed.(†Ã„
+csquid:CommentedOutCodeLine”"<This block of commented-out lines of code should be removed.(ÃÞÆ†
+csquid:CommentedOutCodeLine˜"<This block of commented-out lines of code should be removed.(¢ý¬ñ
+csquid:CommentedOutCodeLine©"<This block of commented-out lines of code should be removed.(¢ý¬ñ
+hsquid:CommentedOutCodeLine±"<This block of commented-out lines of code should be removed.(¹§¿Ãÿÿÿÿÿ
+csquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(¢ý¬ñ
+csquid:CommentedOutCodeLineÃ"<This block of commented-out lines of code should be removed.(¢¶»¥

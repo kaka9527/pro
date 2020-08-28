@@ -1,23 +1,13 @@
 package com.tin.it.config;
 
-import com.tin.it.mqtt.handler.DataMessageArrivedHandler;
-import com.tin.it.mqtt.handler.MqttMessageHandler;
-import com.tin.it.util.Constants;
+import com.tin.it.mqtt.MqttMessageClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.MqttTopic;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.integration.annotation.ServiceActivator;
-import org.springframework.integration.channel.DirectChannel;
-import org.springframework.integration.core.MessageProducer;
 import org.springframework.integration.mqtt.core.DefaultMqttPahoClientFactory;
-import org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter;
-import org.springframework.integration.mqtt.support.DefaultPahoMessageConverter;
-import org.springframework.messaging.MessageChannel;
-import org.springframework.messaging.MessageHandler;
 
 import javax.annotation.Resource;
 
@@ -58,6 +48,20 @@ public class MqttDataConfiguration {
         factory.setConnectionOptions(connectOptions);
 
         return factory;
+    }
+
+    /**
+     * 消息客户端
+     * @return
+     */
+    @Bean("MqttMessageClient")
+    public MqttMessageClient mqttMessageClient() {
+        MqttMessageClient client = new MqttMessageClient(mqttProperties.getClientId()+"_send", dataClientFactory());
+        client.setAsync(mqttProperties.getAsync());
+        client.setDefaultQos(mqttProperties.getDefaultQos());
+        client.setDefaultRetained(false);
+        client.setCompletionTimeout(mqttProperties.getCompletionTimeout());
+        return client;
     }
 
     /**

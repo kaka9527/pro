@@ -86,20 +86,6 @@ public class MqttResponseConfiguration {
     }
 
     /**
-     * 消息客户端
-     * @return
-     */
-    @Bean
-    public MqttMessageClient mqttMessageClient() {
-        MqttMessageClient client = new MqttMessageClient(mqttProperties.getClientId(), responseClientFactory());
-        client.setAsync(mqttProperties.getAsync());
-        client.setDefaultQos(mqttProperties.getDefaultQos());
-        client.setDefaultRetained(false);
-        client.setCompletionTimeout(mqttProperties.getCompletionTimeout());
-        return client;
-    }
-
-    /**
      *  订阅主题：chuangkou/gateway/#
      * @return
      */

@@ -1,5 +1,6 @@
 package com.tin.it.config;
 
+import com.tin.it.mqtt.MqttMessageClient;
 import com.tin.it.mqtt.handler.DataMessageListener;
 import com.tin.it.util.Constants;
 import org.eclipse.paho.client.mqttv3.MqttClient;
@@ -59,7 +60,7 @@ public class MqttClientConfiguration {
         return connectOptions;
     }
 
-    @Bean("TestMqttClient")
+    @Bean("MqttClientData")
     public MqttClient mqttClient(){
         MemoryPersistence persistence = new MemoryPersistence();
         String[] serverURIs = mqttProperties.getServerURIs();

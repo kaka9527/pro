@@ -77,9 +77,10 @@ public class PduDateSettingTask implements Runnable {
      */
     private void writeMsgToClient(String msg) throws IOException {
         try {
-            byte[] ss = StringUtil.hexStringToByteArray(msg);
-            this.mqttMessageClient.sendMessage(Constants.TOPIC_GATEWAY_REQUEST+this.moduleId,ss);
-            //mqttMessageClient.writeAndFlush(Unpooled.copiedBuffer(ss));
+            if(this.mqttMessageClient != null){
+                byte[] ss = StringUtil.hexStringToByteArray(msg);
+                this.mqttMessageClient.sendMessage(Constants.TOPIC_GATEWAY_REQUEST+this.moduleId,ss);
+            }
         }catch (Exception e){
             logger.error(" 报文发送失败 ",e);
         }
